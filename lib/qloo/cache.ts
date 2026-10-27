@@ -20,7 +20,12 @@ export class QlooMemoryCache {
   }
 
   public hashRequest(endpoint: string, params: Record<string, unknown>): string {
-    const serialized = JSON.stringify({ endpoint, params }, Object.keys(params).sort());
+    const sortedParamKeys = Object.keys(params).sort();
+    const sortedParams: Record<string, unknown> = {};
+    for (const k of sortedParamKeys) {
+      sortedParams[k] = params[k];
+    }
+    const serialized = JSON.stringify({ endpoint, params: sortedParams });
     return crypto.createHash('sha256').update(serialized).digest('hex');
   }
 

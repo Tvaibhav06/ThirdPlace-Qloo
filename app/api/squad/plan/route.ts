@@ -23,9 +23,11 @@ export async function POST(req: NextRequest) {
   const writer = stream.writable.getWriter();
 
   const sendEvent = async (event: string, data: any) => {
-    await writer.write(
-      encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`)
-    );
+    try {
+      await writer.write(
+        encoder.encode(`event: ${event}\ndata: ${JSON.stringify(data)}\n\n`)
+      );
+    } catch {}
   };
 
   (async () => {
@@ -68,7 +70,6 @@ export async function POST(req: NextRequest) {
 
       if (needsInputBatch.length > 0) {
         await sendEvent('needs_input', { ambiguousSeeds: needsInputBatch });
-        await writer.close();
         return;
       }
 
@@ -88,7 +89,6 @@ export async function POST(req: NextRequest) {
           status: 'infeasible',
           message: 'No venues in Chicago catalog meet the initial budget, commute, and hard filter criteria.'
         });
-        await writer.close();
         return;
       }
 
@@ -180,10 +180,19 @@ export async function POST(req: NextRequest) {
           violations: topAttempt.verdict.breaches
         });
 
+        const closedIds = evaluatedCandidates
+          .filter(c => c.candidateVenue && c.verdict.breaches.some((b: any) => b.type === 'HOURS_CLOSED'))
+          .map(c => c.candidateVenue!.id);
+        if (closedIds.length > 0 && currentPool.length > closedIds.length) {
+          currentPool = currentPool.filter(id => !closedIds.includes(id));
+        }
+
         const actions = await planNextActions(topAttempt.verdict.breaches, currentPool, null);
-        const applied = applyReplanAction(actions[0], currentPool, catalog, currentMembers);
-        currentPool = applied.updatedPool;
-        currentMembers = applied.updatedMembers;
+        for (const action of actions) {
+          const applied = applyReplanAction(action, currentPool, catalog, currentMembers);
+          currentPool = applied.updatedPool;
+          currentMembers = applied.updatedMembers;
+        }
       }
 
       if (!finalPlan) {
@@ -191,7 +200,6 @@ export async function POST(req: NextRequest) {
           status: 'infeasible',
           message: 'No venue satisfied all constraints within 3 replans.'
         });
-        await writer.close();
         return;
       }
 
@@ -232,7 +240,9 @@ export async function POST(req: NextRequest) {
     } catch (err: any) {
       await sendEvent('terminal', { status: 'failed', error: err.message });
     } finally {
-      await writer.close();
+      try {
+        await writer.close();
+      } catch {}
     }
   })();
 

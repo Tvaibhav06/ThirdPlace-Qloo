@@ -26,10 +26,11 @@ export function applyReplanAction(
 
   switch (action.type) {
     case 'SWITCH_TO_CHEAPER_VENUE': {
-      // Re-order and filter pool to venues with base spend <= 1000 cents
+      // Re-order and filter pool to venues with base spend <= maxBaseCents (default 1200)
+      const maxBase = action.parameters?.maxBaseCents ?? 1200;
       const filtered = updatedPool.filter(id => {
         const v = catalog.find(item => item.id === id);
-        return v && v.spend.baseCents <= 1000;
+        return v && v.spend.baseCents <= maxBase;
       });
       if (filtered.length > 0) updatedPool = filtered;
       break;
