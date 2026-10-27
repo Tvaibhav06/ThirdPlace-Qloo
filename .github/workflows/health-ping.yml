@@ -1,0 +1,19 @@
+name: Hourly Health Probe
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Every hour
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Live Render URL
+        run: |
+          RESPONSE=$(curl -s -w "%{http_code}" -o response.json "https://thirdplace-squad.onrender.com/api/health")
+          echo "Status: $RESPONSE"
+          if [ "$RESPONSE" -ne 200 ]; then
+            echo "Health check failed!"
+            exit 1
+          fi

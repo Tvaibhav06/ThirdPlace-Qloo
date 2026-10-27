@@ -1,0 +1,41 @@
+{
+  "name": "thirdplace-squad",
+  "version": "1.0.0",
+  "description": "Culturally grounded third-place routines and multi-friend hangout consensus, powered by Qloo, for the 2026 Qloo Agentic Hackathon.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/thirdPlaceLedger.test.mjs && tsx tests/qlooClient.test.ts && tsx tests/validator.test.ts",
+    "test:ledger": "node --test tests/thirdPlaceLedger.test.mjs",
+    "test:validator": "tsx tests/validator.test.ts",
+    "test:qloo": "tsx tests/qlooClient.test.ts",
+    "test:orchestrator": "tsx tests/orchestrator.test.ts",
+    "test:eval": "node scripts/run-evaluation.mjs",
+    "build:matrix": "node scripts/build-chicago-matrix.mjs",
+    "audit:secrets": "node scripts/audit-bundle-secrets.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.468.0",
+    "next": "15.1.7",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.16",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

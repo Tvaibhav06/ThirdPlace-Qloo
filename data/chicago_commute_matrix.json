@@ -1,0 +1,2317 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-27T14:11:18.161Z",
+    "osrmRouter": "Haversine Urban Grid Modeling (walk: 4.8km/h, bike: 15km/h, drive: 28km/h)",
+    "modes": [
+      "walk",
+      "bike",
+      "drive"
+    ],
+    "originsCount": 8,
+    "venuesCount": 20
+  },
+  "durationsSeconds": {
+    "wicker_park->v_wp_reckless->walk": {
+      "outward": 429,
+      "return": 429
+    },
+    "wicker_park->v_wp_reckless->bike": {
+      "outward": 178,
+      "return": 178
+    },
+    "wicker_park->v_wp_reckless->drive": {
+      "outward": 243,
+      "return": 255
+    },
+    "wicker_park->v_wp_myopic->walk": {
+      "outward": 228,
+      "return": 228
+    },
+    "wicker_park->v_wp_myopic->bike": {
+      "outward": 114,
+      "return": 114
+    },
+    "wicker_park->v_wp_myopic->drive": {
+      "outward": 209,
+      "return": 219
+    },
+    "wicker_park->v_wp_wormhole->walk": {
+      "outward": 310,
+      "return": 310
+    },
+    "wicker_park->v_wp_wormhole->bike": {
+      "outward": 140,
+      "return": 140
+    },
+    "wicker_park->v_wp_wormhole->drive": {
+      "outward": 223,
+      "return": 234
+    },
+    "wicker_park->v_ls_snakes->walk": {
+      "outward": 905,
+      "return": 905
+    },
+    "wicker_park->v_ls_snakes->bike": {
+      "outward": 330,
+      "return": 330
+    },
+    "wicker_park->v_ls_snakes->drive": {
+      "outward": 325,
+      "return": 341
+    },
+    "wicker_park->v_ls_citylit->walk": {
+      "outward": 2337,
+      "return": 2337
+    },
+    "wicker_park->v_ls_citylit->bike": {
+      "outward": 789,
+      "return": 789
+    },
+    "wicker_park->v_ls_citylit->drive": {
+      "outward": 570,
+      "return": 599
+    },
+    "wicker_park->v_ls_logantheatre->walk": {
+      "outward": 2558,
+      "return": 2558
+    },
+    "wicker_park->v_ls_logantheatre->bike": {
+      "outward": 859,
+      "return": 859
+    },
+    "wicker_park->v_ls_logantheatre->drive": {
+      "outward": 608,
+      "return": 638
+    },
+    "wicker_park->v_ls_mustache->walk": {
+      "outward": 1712,
+      "return": 1712
+    },
+    "wicker_park->v_ls_mustache->bike": {
+      "outward": 589,
+      "return": 589
+    },
+    "wicker_park->v_ls_mustache->drive": {
+      "outward": 463,
+      "return": 486
+    },
+    "wicker_park->v_pl_thalia->walk": {
+      "outward": 4549,
+      "return": 4549
+    },
+    "wicker_park->v_pl_thalia->bike": {
+      "outward": 1496,
+      "return": 1496
+    },
+    "wicker_park->v_pl_thalia->drive": {
+      "outward": 949,
+      "return": 996
+    },
+    "wicker_park->v_pl_communitybooks->walk": {
+      "outward": 4618,
+      "return": 4618
+    },
+    "wicker_park->v_pl_communitybooks->bike": {
+      "outward": 1519,
+      "return": 1519
+    },
+    "wicker_park->v_pl_communitybooks->drive": {
+      "outward": 961,
+      "return": 1009
+    },
+    "wicker_park->v_pl_kristoffers->walk": {
+      "outward": 4717,
+      "return": 4717
+    },
+    "wicker_park->v_pl_kristoffers->bike": {
+      "outward": 1550,
+      "return": 1550
+    },
+    "wicker_park->v_pl_kristoffers->drive": {
+      "outward": 978,
+      "return": 1027
+    },
+    "wicker_park->v_hp_57thbooks->walk": {
+      "outward": 11206,
+      "return": 11206
+    },
+    "wicker_park->v_hp_57thbooks->bike": {
+      "outward": 3627,
+      "return": 3627
+    },
+    "wicker_park->v_hp_57thbooks->drive": {
+      "outward": 2091,
+      "return": 2196
+    },
+    "wicker_park->v_hp_semcoop->walk": {
+      "outward": 11201,
+      "return": 11201
+    },
+    "wicker_park->v_hp_semcoop->bike": {
+      "outward": 3625,
+      "return": 3625
+    },
+    "wicker_park->v_hp_semcoop->drive": {
+      "outward": 2090,
+      "return": 2195
+    },
+    "wicker_park->v_hp_medici->walk": {
+      "outward": 11230,
+      "return": 11230
+    },
+    "wicker_park->v_hp_medici->bike": {
+      "outward": 3634,
+      "return": 3634
+    },
+    "wicker_park->v_hp_medici->drive": {
+      "outward": 2095,
+      "return": 2200
+    },
+    "wicker_park->v_lv_unabridged->walk": {
+      "outward": 3538,
+      "return": 3538
+    },
+    "wicker_park->v_lv_unabridged->bike": {
+      "outward": 1173,
+      "return": 1173
+    },
+    "wicker_park->v_lv_unabridged->drive": {
+      "outward": 776,
+      "return": 815
+    },
+    "wicker_park->v_lv_musicbox->walk": {
+      "outward": 3641,
+      "return": 3641
+    },
+    "wicker_park->v_lv_musicbox->bike": {
+      "outward": 1206,
+      "return": 1206
+    },
+    "wicker_park->v_lv_musicbox->drive": {
+      "outward": 794,
+      "return": 834
+    },
+    "wicker_park->v_wl_sawada->walk": {
+      "outward": 2899,
+      "return": 2899
+    },
+    "wicker_park->v_wl_sawada->bike": {
+      "outward": 969,
+      "return": 969
+    },
+    "wicker_park->v_wl_sawada->drive": {
+      "outward": 667,
+      "return": 700
+    },
+    "wicker_park->v_ct_library->walk": {
+      "outward": 5499,
+      "return": 5499
+    },
+    "wicker_park->v_ct_library->bike": {
+      "outward": 1801,
+      "return": 1801
+    },
+    "wicker_park->v_ct_library->drive": {
+      "outward": 1112,
+      "return": 1168
+    },
+    "wicker_park->v_ct_pingtom->walk": {
+      "outward": 5118,
+      "return": 5118
+    },
+    "wicker_park->v_ct_pingtom->bike": {
+      "outward": 1678,
+      "return": 1678
+    },
+    "wicker_park->v_ct_pingtom->drive": {
+      "outward": 1047,
+      "return": 1099
+    },
+    "wicker_park->v_lp_conservatory->walk": {
+      "outward": 3155,
+      "return": 3155
+    },
+    "wicker_park->v_lp_conservatory->bike": {
+      "outward": 1050,
+      "return": 1050
+    },
+    "wicker_park->v_lp_conservatory->drive": {
+      "outward": 711,
+      "return": 747
+    },
+    "wicker_park->v_lp_arcade->walk": {
+      "outward": 2689,
+      "return": 2689
+    },
+    "wicker_park->v_lp_arcade->bike": {
+      "outward": 901,
+      "return": 901
+    },
+    "wicker_park->v_lp_arcade->drive": {
+      "outward": 631,
+      "return": 663
+    },
+    "logan_square->v_wp_reckless->walk": {
+      "outward": 2810,
+      "return": 2810
+    },
+    "logan_square->v_wp_reckless->bike": {
+      "outward": 940,
+      "return": 940
+    },
+    "logan_square->v_wp_reckless->drive": {
+      "outward": 651,
+      "return": 684
+    },
+    "logan_square->v_wp_myopic->walk": {
+      "outward": 2454,
+      "return": 2454
+    },
+    "logan_square->v_wp_myopic->bike": {
+      "outward": 826,
+      "return": 826
+    },
+    "logan_square->v_wp_myopic->drive": {
+      "outward": 590,
+      "return": 620
+    },
+    "logan_square->v_wp_wormhole->walk": {
+      "outward": 2661,
+      "return": 2661
+    },
+    "logan_square->v_wp_wormhole->bike": {
+      "outward": 892,
+      "return": 892
+    },
+    "logan_square->v_wp_wormhole->drive": {
+      "outward": 626,
+      "return": 657
+    },
+    "logan_square->v_ls_snakes->walk": {
+      "outward": 1648,
+      "return": 1648
+    },
+    "logan_square->v_ls_snakes->bike": {
+      "outward": 568,
+      "return": 568
+    },
+    "logan_square->v_ls_snakes->drive": {
+      "outward": 452,
+      "return": 475
+    },
+    "logan_square->v_ls_citylit->walk": {
+      "outward": 199,
+      "return": 199
+    },
+    "logan_square->v_ls_citylit->bike": {
+      "outward": 104,
+      "return": 104
+    },
+    "logan_square->v_ls_citylit->drive": {
+      "outward": 204,
+      "return": 214
+    },
+    "logan_square->v_ls_logantheatre->walk": {
+      "outward": 164,
+      "return": 164
+    },
+    "logan_square->v_ls_logantheatre->bike": {
+      "outward": 93,
+      "return": 93
+    },
+    "logan_square->v_ls_logantheatre->drive": {
+      "outward": 198,
+      "return": 208
+    },
+    "logan_square->v_ls_mustache->walk": {
+      "outward": 812,
+      "return": 812
+    },
+    "logan_square->v_ls_mustache->bike": {
+      "outward": 301,
+      "return": 301
+    },
+    "logan_square->v_ls_mustache->drive": {
+      "outward": 309,
+      "return": 324
+    },
+    "logan_square->v_pl_thalia->walk": {
+      "outward": 6769,
+      "return": 6769
+    },
+    "logan_square->v_pl_thalia->bike": {
+      "outward": 2207,
+      "return": 2207
+    },
+    "logan_square->v_pl_thalia->drive": {
+      "outward": 1330,
+      "return": 1397
+    },
+    "logan_square->v_pl_communitybooks->walk": {
+      "outward": 6861,
+      "return": 6861
+    },
+    "logan_square->v_pl_communitybooks->bike": {
+      "outward": 2236,
+      "return": 2236
+    },
+    "logan_square->v_pl_communitybooks->drive": {
+      "outward": 1346,
+      "return": 1413
+    },
+    "logan_square->v_pl_kristoffers->walk": {
+      "outward": 7022,
+      "return": 7022
+    },
+    "logan_square->v_pl_kristoffers->bike": {
+      "outward": 2288,
+      "return": 2288
+    },
+    "logan_square->v_pl_kristoffers->drive": {
+      "outward": 1373,
+      "return": 1442
+    },
+    "logan_square->v_hp_57thbooks->walk": {
+      "outward": 13513,
+      "return": 13513
+    },
+    "logan_square->v_hp_57thbooks->bike": {
+      "outward": 4365,
+      "return": 4365
+    },
+    "logan_square->v_hp_57thbooks->drive": {
+      "outward": 2486,
+      "return": 2610
+    },
+    "logan_square->v_hp_semcoop->walk": {
+      "outward": 13496,
+      "return": 13496
+    },
+    "logan_square->v_hp_semcoop->bike": {
+      "outward": 4359,
+      "return": 4359
+    },
+    "logan_square->v_hp_semcoop->drive": {
+      "outward": 2483,
+      "return": 2607
+    },
+    "logan_square->v_hp_medici->walk": {
+      "outward": 13539,
+      "return": 13539
+    },
+    "logan_square->v_hp_medici->bike": {
+      "outward": 4373,
+      "return": 4373
+    },
+    "logan_square->v_hp_medici->drive": {
+      "outward": 2491,
+      "return": 2616
+    },
+    "logan_square->v_lv_unabridged->walk": {
+      "outward": 4103,
+      "return": 4103
+    },
+    "logan_square->v_lv_unabridged->bike": {
+      "outward": 1354,
+      "return": 1354
+    },
+    "logan_square->v_lv_unabridged->drive": {
+      "outward": 873,
+      "return": 917
+    },
+    "logan_square->v_lv_musicbox->walk": {
+      "outward": 3291,
+      "return": 3291
+    },
+    "logan_square->v_lv_musicbox->bike": {
+      "outward": 1094,
+      "return": 1094
+    },
+    "logan_square->v_lv_musicbox->drive": {
+      "outward": 734,
+      "return": 771
+    },
+    "logan_square->v_wl_sawada->walk": {
+      "outward": 5292,
+      "return": 5292
+    },
+    "logan_square->v_wl_sawada->bike": {
+      "outward": 1734,
+      "return": 1734
+    },
+    "logan_square->v_wl_sawada->drive": {
+      "outward": 1077,
+      "return": 1131
+    },
+    "logan_square->v_ct_library->walk": {
+      "outward": 7851,
+      "return": 7851
+    },
+    "logan_square->v_ct_library->bike": {
+      "outward": 2553,
+      "return": 2553
+    },
+    "logan_square->v_ct_library->drive": {
+      "outward": 1516,
+      "return": 1592
+    },
+    "logan_square->v_ct_pingtom->walk": {
+      "outward": 7475,
+      "return": 7475
+    },
+    "logan_square->v_ct_pingtom->bike": {
+      "outward": 2433,
+      "return": 2433
+    },
+    "logan_square->v_ct_pingtom->drive": {
+      "outward": 1451,
+      "return": 1524
+    },
+    "logan_square->v_lp_conservatory->walk": {
+      "outward": 4569,
+      "return": 4569
+    },
+    "logan_square->v_lp_conservatory->bike": {
+      "outward": 1503,
+      "return": 1503
+    },
+    "logan_square->v_lp_conservatory->drive": {
+      "outward": 953,
+      "return": 1001
+    },
+    "logan_square->v_lp_arcade->walk": {
+      "outward": 3405,
+      "return": 3405
+    },
+    "logan_square->v_lp_arcade->bike": {
+      "outward": 1131,
+      "return": 1131
+    },
+    "logan_square->v_lp_arcade->drive": {
+      "outward": 753,
+      "return": 791
+    },
+    "pilsen->v_wp_reckless->walk": {
+      "outward": 4425,
+      "return": 4425
+    },
+    "pilsen->v_wp_reckless->bike": {
+      "outward": 1457,
+      "return": 1457
+    },
+    "pilsen->v_wp_reckless->drive": {
+      "outward": 928,
+      "return": 974
+    },
+    "pilsen->v_wp_myopic->walk": {
+      "outward": 4765,
+      "return": 4765
+    },
+    "pilsen->v_wp_myopic->bike": {
+      "outward": 1566,
+      "return": 1566
+    },
+    "pilsen->v_wp_myopic->drive": {
+      "outward": 987,
+      "return": 1036
+    },
+    "pilsen->v_wp_wormhole->walk": {
+      "outward": 4575,
+      "return": 4575
+    },
+    "pilsen->v_wp_wormhole->bike": {
+      "outward": 1505,
+      "return": 1505
+    },
+    "pilsen->v_wp_wormhole->drive": {
+      "outward": 954,
+      "return": 1002
+    },
+    "pilsen->v_ls_snakes->walk": {
+      "outward": 5504,
+      "return": 5504
+    },
+    "pilsen->v_ls_snakes->bike": {
+      "outward": 1802,
+      "return": 1802
+    },
+    "pilsen->v_ls_snakes->drive": {
+      "outward": 1113,
+      "return": 1169
+    },
+    "pilsen->v_ls_citylit->walk": {
+      "outward": 6757,
+      "return": 6757
+    },
+    "pilsen->v_ls_citylit->bike": {
+      "outward": 2203,
+      "return": 2203
+    },
+    "pilsen->v_ls_citylit->drive": {
+      "outward": 1328,
+      "return": 1394
+    },
+    "pilsen->v_ls_logantheatre->walk": {
+      "outward": 6995,
+      "return": 6995
+    },
+    "pilsen->v_ls_logantheatre->bike": {
+      "outward": 2279,
+      "return": 2279
+    },
+    "pilsen->v_ls_logantheatre->drive": {
+      "outward": 1369,
+      "return": 1437
+    },
+    "pilsen->v_ls_mustache->walk": {
+      "outward": 6223,
+      "return": 6223
+    },
+    "pilsen->v_ls_mustache->bike": {
+      "outward": 2032,
+      "return": 2032
+    },
+    "pilsen->v_ls_mustache->drive": {
+      "outward": 1236,
+      "return": 1298
+    },
+    "pilsen->v_pl_thalia->walk": {
+      "outward": 194,
+      "return": 194
+    },
+    "pilsen->v_pl_thalia->bike": {
+      "outward": 103,
+      "return": 103
+    },
+    "pilsen->v_pl_thalia->drive": {
+      "outward": 203,
+      "return": 213
+    },
+    "pilsen->v_pl_communitybooks->walk": {
+      "outward": 249,
+      "return": 249
+    },
+    "pilsen->v_pl_communitybooks->bike": {
+      "outward": 121,
+      "return": 121
+    },
+    "pilsen->v_pl_communitybooks->drive": {
+      "outward": 212,
+      "return": 223
+    },
+    "pilsen->v_pl_kristoffers->walk": {
+      "outward": 724,
+      "return": 724
+    },
+    "pilsen->v_pl_kristoffers->bike": {
+      "outward": 272,
+      "return": 272
+    },
+    "pilsen->v_pl_kristoffers->drive": {
+      "outward": 294,
+      "return": 309
+    },
+    "pilsen->v_hp_57thbooks->walk": {
+      "outward": 6716,
+      "return": 6716
+    },
+    "pilsen->v_hp_57thbooks->bike": {
+      "outward": 2190,
+      "return": 2190
+    },
+    "pilsen->v_hp_57thbooks->drive": {
+      "outward": 1321,
+      "return": 1387
+    },
+    "pilsen->v_hp_semcoop->walk": {
+      "outward": 6684,
+      "return": 6684
+    },
+    "pilsen->v_hp_semcoop->bike": {
+      "outward": 2180,
+      "return": 2180
+    },
+    "pilsen->v_hp_semcoop->drive": {
+      "outward": 1316,
+      "return": 1382
+    },
+    "pilsen->v_hp_medici->walk": {
+      "outward": 6745,
+      "return": 6745
+    },
+    "pilsen->v_hp_medici->bike": {
+      "outward": 2199,
+      "return": 2199
+    },
+    "pilsen->v_hp_medici->drive": {
+      "outward": 1326,
+      "return": 1392
+    },
+    "pilsen->v_lv_unabridged->walk": {
+      "outward": 7188,
+      "return": 7188
+    },
+    "pilsen->v_lv_unabridged->bike": {
+      "outward": 2341,
+      "return": 2341
+    },
+    "pilsen->v_lv_unabridged->drive": {
+      "outward": 1402,
+      "return": 1472
+    },
+    "pilsen->v_lv_musicbox->walk": {
+      "outward": 7905,
+      "return": 7905
+    },
+    "pilsen->v_lv_musicbox->bike": {
+      "outward": 2570,
+      "return": 2570
+    },
+    "pilsen->v_lv_musicbox->drive": {
+      "outward": 1525,
+      "return": 1601
+    },
+    "pilsen->v_wl_sawada->walk": {
+      "outward": 2401,
+      "return": 2401
+    },
+    "pilsen->v_wl_sawada->bike": {
+      "outward": 809,
+      "return": 809
+    },
+    "pilsen->v_wl_sawada->drive": {
+      "outward": 581,
+      "return": 610
+    },
+    "pilsen->v_ct_library->walk": {
+      "outward": 1563,
+      "return": 1563
+    },
+    "pilsen->v_ct_library->bike": {
+      "outward": 541,
+      "return": 541
+    },
+    "pilsen->v_ct_library->drive": {
+      "outward": 438,
+      "return": 460
+    },
+    "pilsen->v_ct_pingtom->walk": {
+      "outward": 1412,
+      "return": 1412
+    },
+    "pilsen->v_ct_pingtom->bike": {
+      "outward": 493,
+      "return": 493
+    },
+    "pilsen->v_ct_pingtom->drive": {
+      "outward": 412,
+      "return": 433
+    },
+    "pilsen->v_lp_conservatory->walk": {
+      "outward": 5959,
+      "return": 5959
+    },
+    "pilsen->v_lp_conservatory->bike": {
+      "outward": 1948,
+      "return": 1948
+    },
+    "pilsen->v_lp_conservatory->drive": {
+      "outward": 1191,
+      "return": 1251
+    },
+    "pilsen->v_lp_arcade->walk": {
+      "outward": 6533,
+      "return": 6533
+    },
+    "pilsen->v_lp_arcade->bike": {
+      "outward": 2131,
+      "return": 2131
+    },
+    "pilsen->v_lp_arcade->drive": {
+      "outward": 1290,
+      "return": 1355
+    },
+    "hyde_park->v_wp_reckless->walk": {
+      "outward": 10784,
+      "return": 10784
+    },
+    "hyde_park->v_wp_reckless->bike": {
+      "outward": 3492,
+      "return": 3492
+    },
+    "hyde_park->v_wp_reckless->drive": {
+      "outward": 2018,
+      "return": 2119
+    },
+    "hyde_park->v_wp_myopic->walk": {
+      "outward": 11144,
+      "return": 11144
+    },
+    "hyde_park->v_wp_myopic->bike": {
+      "outward": 3607,
+      "return": 3607
+    },
+    "hyde_park->v_wp_myopic->drive": {
+      "outward": 2080,
+      "return": 2184
+    },
+    "hyde_park->v_wp_wormhole->walk": {
+      "outward": 10939,
+      "return": 10939
+    },
+    "hyde_park->v_wp_wormhole->bike": {
+      "outward": 3541,
+      "return": 3541
+    },
+    "hyde_park->v_wp_wormhole->drive": {
+      "outward": 2045,
+      "return": 2147
+    },
+    "hyde_park->v_ls_snakes->walk": {
+      "outward": 11935,
+      "return": 11935
+    },
+    "hyde_park->v_ls_snakes->bike": {
+      "outward": 3860,
+      "return": 3860
+    },
+    "hyde_park->v_ls_snakes->drive": {
+      "outward": 2216,
+      "return": 2327
+    },
+    "hyde_park->v_ls_citylit->walk": {
+      "outward": 13279,
+      "return": 13279
+    },
+    "hyde_park->v_ls_citylit->bike": {
+      "outward": 4290,
+      "return": 4290
+    },
+    "hyde_park->v_ls_citylit->drive": {
+      "outward": 2446,
+      "return": 2568
+    },
+    "hyde_park->v_ls_logantheatre->walk": {
+      "outward": 13515,
+      "return": 13515
+    },
+    "hyde_park->v_ls_logantheatre->bike": {
+      "outward": 4366,
+      "return": 4366
+    },
+    "hyde_park->v_ls_logantheatre->drive": {
+      "outward": 2487,
+      "return": 2611
+    },
+    "hyde_park->v_ls_mustache->walk": {
+      "outward": 12709,
+      "return": 12709
+    },
+    "hyde_park->v_ls_mustache->bike": {
+      "outward": 4108,
+      "return": 4108
+    },
+    "hyde_park->v_ls_mustache->drive": {
+      "outward": 2348,
+      "return": 2465
+    },
+    "hyde_park->v_pl_thalia->walk": {
+      "outward": 6751,
+      "return": 6751
+    },
+    "hyde_park->v_pl_thalia->bike": {
+      "outward": 2201,
+      "return": 2201
+    },
+    "hyde_park->v_pl_thalia->drive": {
+      "outward": 1327,
+      "return": 1393
+    },
+    "hyde_park->v_pl_communitybooks->walk": {
+      "outward": 6640,
+      "return": 6640
+    },
+    "hyde_park->v_pl_communitybooks->bike": {
+      "outward": 2166,
+      "return": 2166
+    },
+    "hyde_park->v_pl_communitybooks->drive": {
+      "outward": 1308,
+      "return": 1373
+    },
+    "hyde_park->v_pl_kristoffers->walk": {
+      "outward": 6450,
+      "return": 6450
+    },
+    "hyde_park->v_pl_kristoffers->bike": {
+      "outward": 2105,
+      "return": 2105
+    },
+    "hyde_park->v_pl_kristoffers->drive": {
+      "outward": 1275,
+      "return": 1339
+    },
+    "hyde_park->v_hp_57thbooks->walk": {
+      "outward": 355,
+      "return": 355
+    },
+    "hyde_park->v_hp_57thbooks->bike": {
+      "outward": 154,
+      "return": 154
+    },
+    "hyde_park->v_hp_57thbooks->drive": {
+      "outward": 231,
+      "return": 243
+    },
+    "hyde_park->v_hp_semcoop->walk": {
+      "outward": 565,
+      "return": 565
+    },
+    "hyde_park->v_hp_semcoop->bike": {
+      "outward": 222,
+      "return": 222
+    },
+    "hyde_park->v_hp_semcoop->drive": {
+      "outward": 267,
+      "return": 280
+    },
+    "hyde_park->v_hp_medici->walk": {
+      "outward": 328,
+      "return": 328
+    },
+    "hyde_park->v_hp_medici->bike": {
+      "outward": 146,
+      "return": 146
+    },
+    "hyde_park->v_hp_medici->drive": {
+      "outward": 226,
+      "return": 237
+    },
+    "hyde_park->v_lv_unabridged->walk": {
+      "outward": 12755,
+      "return": 12755
+    },
+    "hyde_park->v_lv_unabridged->bike": {
+      "outward": 4122,
+      "return": 4122
+    },
+    "hyde_park->v_lv_unabridged->drive": {
+      "outward": 2356,
+      "return": 2474
+    },
+    "hyde_park->v_lv_musicbox->walk": {
+      "outward": 13823,
+      "return": 13823
+    },
+    "hyde_park->v_lv_musicbox->bike": {
+      "outward": 4464,
+      "return": 4464
+    },
+    "hyde_park->v_lv_musicbox->drive": {
+      "outward": 2539,
+      "return": 2666
+    },
+    "hyde_park->v_wl_sawada->walk": {
+      "outward": 8341,
+      "return": 8341
+    },
+    "hyde_park->v_wl_sawada->bike": {
+      "outward": 2710,
+      "return": 2710
+    },
+    "hyde_park->v_wl_sawada->drive": {
+      "outward": 1600,
+      "return": 1680
+    },
+    "hyde_park->v_ct_library->walk": {
+      "outward": 5663,
+      "return": 5663
+    },
+    "hyde_park->v_ct_library->bike": {
+      "outward": 1853,
+      "return": 1853
+    },
+    "hyde_park->v_ct_library->drive": {
+      "outward": 1140,
+      "return": 1197
+    },
+    "hyde_park->v_ct_pingtom->walk": {
+      "outward": 6050,
+      "return": 6050
+    },
+    "hyde_park->v_ct_pingtom->bike": {
+      "outward": 1977,
+      "return": 1977
+    },
+    "hyde_park->v_ct_pingtom->drive": {
+      "outward": 1207,
+      "return": 1267
+    },
+    "hyde_park->v_lp_conservatory->walk": {
+      "outward": 11307,
+      "return": 11307
+    },
+    "hyde_park->v_lp_conservatory->bike": {
+      "outward": 3659,
+      "return": 3659
+    },
+    "hyde_park->v_lp_conservatory->drive": {
+      "outward": 2108,
+      "return": 2213
+    },
+    "hyde_park->v_lp_arcade->walk": {
+      "outward": 12336,
+      "return": 12336
+    },
+    "hyde_park->v_lp_arcade->bike": {
+      "outward": 3988,
+      "return": 3988
+    },
+    "hyde_park->v_lp_arcade->drive": {
+      "outward": 2284,
+      "return": 2398
+    },
+    "lakeview->v_wp_reckless->walk": {
+      "outward": 3140,
+      "return": 3140
+    },
+    "lakeview->v_wp_reckless->bike": {
+      "outward": 1046,
+      "return": 1046
+    },
+    "lakeview->v_wp_reckless->drive": {
+      "outward": 708,
+      "return": 743
+    },
+    "lakeview->v_wp_myopic->walk": {
+      "outward": 2984,
+      "return": 2984
+    },
+    "lakeview->v_wp_myopic->bike": {
+      "outward": 996,
+      "return": 996
+    },
+    "lakeview->v_wp_myopic->drive": {
+      "outward": 681,
+      "return": 715
+    },
+    "lakeview->v_wp_wormhole->walk": {
+      "outward": 3056,
+      "return": 3056
+    },
+    "lakeview->v_wp_wormhole->bike": {
+      "outward": 1019,
+      "return": 1019
+    },
+    "lakeview->v_wp_wormhole->drive": {
+      "outward": 694,
+      "return": 729
+    },
+    "lakeview->v_ls_snakes->walk": {
+      "outward": 2878,
+      "return": 2878
+    },
+    "lakeview->v_ls_snakes->bike": {
+      "outward": 962,
+      "return": 962
+    },
+    "lakeview->v_ls_snakes->drive": {
+      "outward": 663,
+      "return": 696
+    },
+    "lakeview->v_ls_citylit->walk": {
+      "outward": 3543,
+      "return": 3543
+    },
+    "lakeview->v_ls_citylit->bike": {
+      "outward": 1174,
+      "return": 1174
+    },
+    "lakeview->v_ls_citylit->drive": {
+      "outward": 777,
+      "return": 816
+    },
+    "lakeview->v_ls_logantheatre->walk": {
+      "outward": 3577,
+      "return": 3577
+    },
+    "lakeview->v_ls_logantheatre->bike": {
+      "outward": 1185,
+      "return": 1185
+    },
+    "lakeview->v_ls_logantheatre->drive": {
+      "outward": 783,
+      "return": 822
+    },
+    "lakeview->v_ls_mustache->walk": {
+      "outward": 3143,
+      "return": 3143
+    },
+    "lakeview->v_ls_mustache->bike": {
+      "outward": 1047,
+      "return": 1047
+    },
+    "lakeview->v_ls_mustache->drive": {
+      "outward": 709,
+      "return": 744
+    },
+    "lakeview->v_pl_thalia->walk": {
+      "outward": 6943,
+      "return": 6943
+    },
+    "lakeview->v_pl_thalia->bike": {
+      "outward": 2263,
+      "return": 2263
+    },
+    "lakeview->v_pl_thalia->drive": {
+      "outward": 1360,
+      "return": 1428
+    },
+    "lakeview->v_pl_communitybooks->walk": {
+      "outward": 6957,
+      "return": 6957
+    },
+    "lakeview->v_pl_communitybooks->bike": {
+      "outward": 2267,
+      "return": 2267
+    },
+    "lakeview->v_pl_communitybooks->drive": {
+      "outward": 1362,
+      "return": 1430
+    },
+    "lakeview->v_pl_kristoffers->walk": {
+      "outward": 6871,
+      "return": 6871
+    },
+    "lakeview->v_pl_kristoffers->bike": {
+      "outward": 2240,
+      "return": 2240
+    },
+    "lakeview->v_pl_kristoffers->drive": {
+      "outward": 1348,
+      "return": 1415
+    },
+    "lakeview->v_hp_57thbooks->walk": {
+      "outward": 13013,
+      "return": 13013
+    },
+    "lakeview->v_hp_57thbooks->bike": {
+      "outward": 4205,
+      "return": 4205
+    },
+    "lakeview->v_hp_57thbooks->drive": {
+      "outward": 2401,
+      "return": 2521
+    },
+    "lakeview->v_hp_semcoop->walk": {
+      "outward": 13054,
+      "return": 13054
+    },
+    "lakeview->v_hp_semcoop->bike": {
+      "outward": 4218,
+      "return": 4218
+    },
+    "lakeview->v_hp_semcoop->drive": {
+      "outward": 2408,
+      "return": 2528
+    },
+    "lakeview->v_hp_medici->walk": {
+      "outward": 13028,
+      "return": 13028
+    },
+    "lakeview->v_hp_medici->bike": {
+      "outward": 4210,
+      "return": 4210
+    },
+    "lakeview->v_hp_medici->drive": {
+      "outward": 2403,
+      "return": 2523
+    },
+    "lakeview->v_lv_unabridged->walk": {
+      "outward": 629,
+      "return": 629
+    },
+    "lakeview->v_lv_unabridged->bike": {
+      "outward": 242,
+      "return": 242
+    },
+    "lakeview->v_lv_unabridged->drive": {
+      "outward": 278,
+      "return": 292
+    },
+    "lakeview->v_lv_musicbox->walk": {
+      "outward": 1101,
+      "return": 1101
+    },
+    "lakeview->v_lv_musicbox->bike": {
+      "outward": 393,
+      "return": 393
+    },
+    "lakeview->v_lv_musicbox->drive": {
+      "outward": 358,
+      "return": 376
+    },
+    "lakeview->v_wl_sawada->walk": {
+      "outward": 4789,
+      "return": 4789
+    },
+    "lakeview->v_wl_sawada->bike": {
+      "outward": 1573,
+      "return": 1573
+    },
+    "lakeview->v_wl_sawada->drive": {
+      "outward": 991,
+      "return": 1041
+    },
+    "lakeview->v_ct_library->walk": {
+      "outward": 7384,
+      "return": 7384
+    },
+    "lakeview->v_ct_library->bike": {
+      "outward": 2404,
+      "return": 2404
+    },
+    "lakeview->v_ct_library->drive": {
+      "outward": 1435,
+      "return": 1507
+    },
+    "lakeview->v_ct_pingtom->walk": {
+      "outward": 7005,
+      "return": 7005
+    },
+    "lakeview->v_ct_pingtom->bike": {
+      "outward": 2282,
+      "return": 2282
+    },
+    "lakeview->v_ct_pingtom->drive": {
+      "outward": 1370,
+      "return": 1439
+    },
+    "lakeview->v_lp_conservatory->walk": {
+      "outward": 1774,
+      "return": 1774
+    },
+    "lakeview->v_lp_conservatory->bike": {
+      "outward": 609,
+      "return": 609
+    },
+    "lakeview->v_lp_conservatory->drive": {
+      "outward": 474,
+      "return": 498
+    },
+    "lakeview->v_lp_arcade->walk": {
+      "outward": 603,
+      "return": 603
+    },
+    "lakeview->v_lp_arcade->bike": {
+      "outward": 234,
+      "return": 234
+    },
+    "lakeview->v_lp_arcade->drive": {
+      "outward": 273,
+      "return": 287
+    },
+    "west_loop->v_wp_reckless->walk": {
+      "outward": 2596,
+      "return": 2596
+    },
+    "west_loop->v_wp_reckless->bike": {
+      "outward": 871,
+      "return": 871
+    },
+    "west_loop->v_wp_reckless->drive": {
+      "outward": 615,
+      "return": 646
+    },
+    "west_loop->v_wp_myopic->walk": {
+      "outward": 2959,
+      "return": 2959
+    },
+    "west_loop->v_wp_myopic->bike": {
+      "outward": 988,
+      "return": 988
+    },
+    "west_loop->v_wp_myopic->drive": {
+      "outward": 677,
+      "return": 711
+    },
+    "west_loop->v_wp_wormhole->walk": {
+      "outward": 2751,
+      "return": 2751
+    },
+    "west_loop->v_wp_wormhole->bike": {
+      "outward": 921,
+      "return": 921
+    },
+    "west_loop->v_wp_wormhole->drive": {
+      "outward": 641,
+      "return": 673
+    },
+    "west_loop->v_ls_snakes->walk": {
+      "outward": 3770,
+      "return": 3770
+    },
+    "west_loop->v_ls_snakes->bike": {
+      "outward": 1247,
+      "return": 1247
+    },
+    "west_loop->v_ls_snakes->drive": {
+      "outward": 816,
+      "return": 857
+    },
+    "west_loop->v_ls_citylit->walk": {
+      "outward": 5200,
+      "return": 5200
+    },
+    "west_loop->v_ls_citylit->bike": {
+      "outward": 1705,
+      "return": 1705
+    },
+    "west_loop->v_ls_citylit->drive": {
+      "outward": 1061,
+      "return": 1114
+    },
+    "west_loop->v_ls_logantheatre->walk": {
+      "outward": 5426,
+      "return": 5426
+    },
+    "west_loop->v_ls_logantheatre->bike": {
+      "outward": 1777,
+      "return": 1777
+    },
+    "west_loop->v_ls_logantheatre->drive": {
+      "outward": 1100,
+      "return": 1155
+    },
+    "west_loop->v_ls_mustache->walk": {
+      "outward": 4585,
+      "return": 4585
+    },
+    "west_loop->v_ls_mustache->bike": {
+      "outward": 1508,
+      "return": 1508
+    },
+    "west_loop->v_ls_mustache->drive": {
+      "outward": 956,
+      "return": 1004
+    },
+    "west_loop->v_pl_thalia->walk": {
+      "outward": 2183,
+      "return": 2183
+    },
+    "west_loop->v_pl_thalia->bike": {
+      "outward": 739,
+      "return": 739
+    },
+    "west_loop->v_pl_thalia->drive": {
+      "outward": 544,
+      "return": 571
+    },
+    "west_loop->v_pl_communitybooks->walk": {
+      "outward": 2172,
+      "return": 2172
+    },
+    "west_loop->v_pl_communitybooks->bike": {
+      "outward": 736,
+      "return": 736
+    },
+    "west_loop->v_pl_communitybooks->drive": {
+      "outward": 542,
+      "return": 569
+    },
+    "west_loop->v_pl_kristoffers->walk": {
+      "outward": 2063,
+      "return": 2063
+    },
+    "west_loop->v_pl_kristoffers->bike": {
+      "outward": 701,
+      "return": 701
+    },
+    "west_loop->v_pl_kristoffers->drive": {
+      "outward": 523,
+      "return": 549
+    },
+    "west_loop->v_hp_57thbooks->walk": {
+      "outward": 8419,
+      "return": 8419
+    },
+    "west_loop->v_hp_57thbooks->bike": {
+      "outward": 2735,
+      "return": 2735
+    },
+    "west_loop->v_hp_57thbooks->drive": {
+      "outward": 1613,
+      "return": 1694
+    },
+    "west_loop->v_hp_semcoop->walk": {
+      "outward": 8430,
+      "return": 8430
+    },
+    "west_loop->v_hp_semcoop->bike": {
+      "outward": 2738,
+      "return": 2738
+    },
+    "west_loop->v_hp_semcoop->drive": {
+      "outward": 1615,
+      "return": 1696
+    },
+    "west_loop->v_hp_medici->walk": {
+      "outward": 8439,
+      "return": 8439
+    },
+    "west_loop->v_hp_medici->bike": {
+      "outward": 2741,
+      "return": 2741
+    },
+    "west_loop->v_hp_medici->drive": {
+      "outward": 1616,
+      "return": 1697
+    },
+    "west_loop->v_lv_unabridged->walk": {
+      "outward": 4949,
+      "return": 4949
+    },
+    "west_loop->v_lv_unabridged->bike": {
+      "outward": 1624,
+      "return": 1624
+    },
+    "west_loop->v_lv_unabridged->drive": {
+      "outward": 1018,
+      "return": 1069
+    },
+    "west_loop->v_lv_musicbox->walk": {
+      "outward": 5751,
+      "return": 5751
+    },
+    "west_loop->v_lv_musicbox->bike": {
+      "outward": 1881,
+      "return": 1881
+    },
+    "west_loop->v_lv_musicbox->drive": {
+      "outward": 1156,
+      "return": 1214
+    },
+    "west_loop->v_wl_sawada->walk": {
+      "outward": 154,
+      "return": 154
+    },
+    "west_loop->v_wl_sawada->bike": {
+      "outward": 90,
+      "return": 90
+    },
+    "west_loop->v_wl_sawada->drive": {
+      "outward": 196,
+      "return": 206
+    },
+    "west_loop->v_ct_library->walk": {
+      "outward": 2686,
+      "return": 2686
+    },
+    "west_loop->v_ct_library->bike": {
+      "outward": 900,
+      "return": 900
+    },
+    "west_loop->v_ct_library->drive": {
+      "outward": 630,
+      "return": 662
+    },
+    "west_loop->v_ct_pingtom->walk": {
+      "outward": 2298,
+      "return": 2298
+    },
+    "west_loop->v_ct_pingtom->bike": {
+      "outward": 776,
+      "return": 776
+    },
+    "west_loop->v_ct_pingtom->drive": {
+      "outward": 564,
+      "return": 592
+    },
+    "west_loop->v_lp_conservatory->walk": {
+      "outward": 3710,
+      "return": 3710
+    },
+    "west_loop->v_lp_conservatory->bike": {
+      "outward": 1228,
+      "return": 1228
+    },
+    "west_loop->v_lp_conservatory->drive": {
+      "outward": 806,
+      "return": 846
+    },
+    "west_loop->v_lp_arcade->walk": {
+      "outward": 4330,
+      "return": 4330
+    },
+    "west_loop->v_lp_arcade->bike": {
+      "outward": 1426,
+      "return": 1426
+    },
+    "west_loop->v_lp_arcade->drive": {
+      "outward": 912,
+      "return": 958
+    },
+    "lincoln_park->v_wp_reckless->walk": {
+      "outward": 1936,
+      "return": 1936
+    },
+    "lincoln_park->v_wp_reckless->bike": {
+      "outward": 660,
+      "return": 660
+    },
+    "lincoln_park->v_wp_reckless->drive": {
+      "outward": 502,
+      "return": 527
+    },
+    "lincoln_park->v_wp_myopic->walk": {
+      "outward": 1947,
+      "return": 1947
+    },
+    "lincoln_park->v_wp_myopic->bike": {
+      "outward": 664,
+      "return": 664
+    },
+    "lincoln_park->v_wp_myopic->drive": {
+      "outward": 504,
+      "return": 529
+    },
+    "lincoln_park->v_wp_wormhole->walk": {
+      "outward": 1917,
+      "return": 1917
+    },
+    "lincoln_park->v_wp_wormhole->bike": {
+      "outward": 654,
+      "return": 654
+    },
+    "lincoln_park->v_wp_wormhole->drive": {
+      "outward": 498,
+      "return": 523
+    },
+    "lincoln_park->v_ls_snakes->walk": {
+      "outward": 2288,
+      "return": 2288
+    },
+    "lincoln_park->v_ls_snakes->bike": {
+      "outward": 773,
+      "return": 773
+    },
+    "lincoln_park->v_ls_snakes->drive": {
+      "outward": 562,
+      "return": 590
+    },
+    "lincoln_park->v_ls_citylit->walk": {
+      "outward": 3531,
+      "return": 3531
+    },
+    "lincoln_park->v_ls_citylit->bike": {
+      "outward": 1171,
+      "return": 1171
+    },
+    "lincoln_park->v_ls_citylit->drive": {
+      "outward": 775,
+      "return": 814
+    },
+    "lincoln_park->v_ls_logantheatre->walk": {
+      "outward": 3665,
+      "return": 3665
+    },
+    "lincoln_park->v_ls_logantheatre->bike": {
+      "outward": 1214,
+      "return": 1214
+    },
+    "lincoln_park->v_ls_logantheatre->drive": {
+      "outward": 798,
+      "return": 838
+    },
+    "lincoln_park->v_ls_mustache->walk": {
+      "outward": 2938,
+      "return": 2938
+    },
+    "lincoln_park->v_ls_mustache->bike": {
+      "outward": 981,
+      "return": 981
+    },
+    "lincoln_park->v_ls_mustache->drive": {
+      "outward": 673,
+      "return": 707
+    },
+    "lincoln_park->v_pl_thalia->walk": {
+      "outward": 5374,
+      "return": 5374
+    },
+    "lincoln_park->v_pl_thalia->bike": {
+      "outward": 1760,
+      "return": 1760
+    },
+    "lincoln_park->v_pl_thalia->drive": {
+      "outward": 1091,
+      "return": 1146
+    },
+    "lincoln_park->v_pl_communitybooks->walk": {
+      "outward": 5383,
+      "return": 5383
+    },
+    "lincoln_park->v_pl_communitybooks->bike": {
+      "outward": 1763,
+      "return": 1763
+    },
+    "lincoln_park->v_pl_communitybooks->drive": {
+      "outward": 1093,
+      "return": 1148
+    },
+    "lincoln_park->v_pl_kristoffers->walk": {
+      "outward": 5290,
+      "return": 5290
+    },
+    "lincoln_park->v_pl_kristoffers->bike": {
+      "outward": 1734,
+      "return": 1734
+    },
+    "lincoln_park->v_pl_kristoffers->drive": {
+      "outward": 1077,
+      "return": 1131
+    },
+    "lincoln_park->v_hp_57thbooks->walk": {
+      "outward": 11471,
+      "return": 11471
+    },
+    "lincoln_park->v_hp_57thbooks->bike": {
+      "outward": 3711,
+      "return": 3711
+    },
+    "lincoln_park->v_hp_57thbooks->drive": {
+      "outward": 2136,
+      "return": 2243
+    },
+    "lincoln_park->v_hp_semcoop->walk": {
+      "outward": 11505,
+      "return": 11505
+    },
+    "lincoln_park->v_hp_semcoop->bike": {
+      "outward": 3723,
+      "return": 3723
+    },
+    "lincoln_park->v_hp_semcoop->drive": {
+      "outward": 2142,
+      "return": 2249
+    },
+    "lincoln_park->v_hp_medici->walk": {
+      "outward": 11486,
+      "return": 11486
+    },
+    "lincoln_park->v_hp_medici->bike": {
+      "outward": 3716,
+      "return": 3716
+    },
+    "lincoln_park->v_hp_medici->drive": {
+      "outward": 2139,
+      "return": 2246
+    },
+    "lincoln_park->v_lv_unabridged->walk": {
+      "outward": 1767,
+      "return": 1767
+    },
+    "lincoln_park->v_lv_unabridged->bike": {
+      "outward": 606,
+      "return": 606
+    },
+    "lincoln_park->v_lv_unabridged->drive": {
+      "outward": 473,
+      "return": 497
+    },
+    "lincoln_park->v_lv_musicbox->walk": {
+      "outward": 2576,
+      "return": 2576
+    },
+    "lincoln_park->v_lv_musicbox->bike": {
+      "outward": 865,
+      "return": 865
+    },
+    "lincoln_park->v_lv_musicbox->drive": {
+      "outward": 611,
+      "return": 642
+    },
+    "lincoln_park->v_wl_sawada->walk": {
+      "outward": 3208,
+      "return": 3208
+    },
+    "lincoln_park->v_wl_sawada->bike": {
+      "outward": 1067,
+      "return": 1067
+    },
+    "lincoln_park->v_wl_sawada->drive": {
+      "outward": 720,
+      "return": 756
+    },
+    "lincoln_park->v_ct_library->walk": {
+      "outward": 5812,
+      "return": 5812
+    },
+    "lincoln_park->v_ct_library->bike": {
+      "outward": 1900,
+      "return": 1900
+    },
+    "lincoln_park->v_ct_library->drive": {
+      "outward": 1166,
+      "return": 1224
+    },
+    "lincoln_park->v_ct_pingtom->walk": {
+      "outward": 5430,
+      "return": 5430
+    },
+    "lincoln_park->v_ct_pingtom->bike": {
+      "outward": 1779,
+      "return": 1779
+    },
+    "lincoln_park->v_ct_pingtom->drive": {
+      "outward": 1101,
+      "return": 1156
+    },
+    "lincoln_park->v_lp_conservatory->walk": {
+      "outward": 1129,
+      "return": 1129
+    },
+    "lincoln_park->v_lp_conservatory->bike": {
+      "outward": 402,
+      "return": 402
+    },
+    "lincoln_park->v_lp_conservatory->drive": {
+      "outward": 363,
+      "return": 381
+    },
+    "lincoln_park->v_lp_arcade->walk": {
+      "outward": 1106,
+      "return": 1106
+    },
+    "lincoln_park->v_lp_arcade->bike": {
+      "outward": 395,
+      "return": 395
+    },
+    "lincoln_park->v_lp_arcade->drive": {
+      "outward": 359,
+      "return": 377
+    },
+    "chinatown->v_wp_reckless->walk": {
+      "outward": 5268,
+      "return": 5268
+    },
+    "chinatown->v_wp_reckless->bike": {
+      "outward": 1727,
+      "return": 1727
+    },
+    "chinatown->v_wp_reckless->drive": {
+      "outward": 1073,
+      "return": 1127
+    },
+    "chinatown->v_wp_myopic->walk": {
+      "outward": 5630,
+      "return": 5630
+    },
+    "chinatown->v_wp_myopic->bike": {
+      "outward": 1842,
+      "return": 1842
+    },
+    "chinatown->v_wp_myopic->drive": {
+      "outward": 1135,
+      "return": 1192
+    },
+    "chinatown->v_wp_wormhole->walk": {
+      "outward": 5424,
+      "return": 5424
+    },
+    "chinatown->v_wp_wormhole->bike": {
+      "outward": 1776,
+      "return": 1776
+    },
+    "chinatown->v_wp_wormhole->drive": {
+      "outward": 1100,
+      "return": 1155
+    },
+    "chinatown->v_ls_snakes->walk": {
+      "outward": 6426,
+      "return": 6426
+    },
+    "chinatown->v_ls_snakes->bike": {
+      "outward": 2097,
+      "return": 2097
+    },
+    "chinatown->v_ls_snakes->drive": {
+      "outward": 1271,
+      "return": 1335
+    },
+    "chinatown->v_ls_citylit->walk": {
+      "outward": 7798,
+      "return": 7798
+    },
+    "chinatown->v_ls_citylit->bike": {
+      "outward": 2536,
+      "return": 2536
+    },
+    "chinatown->v_ls_citylit->drive": {
+      "outward": 1507,
+      "return": 1582
+    },
+    "chinatown->v_ls_logantheatre->walk": {
+      "outward": 8032,
+      "return": 8032
+    },
+    "chinatown->v_ls_logantheatre->bike": {
+      "outward": 2611,
+      "return": 2611
+    },
+    "chinatown->v_ls_logantheatre->drive": {
+      "outward": 1547,
+      "return": 1624
+    },
+    "chinatown->v_ls_mustache->walk": {
+      "outward": 7212,
+      "return": 7212
+    },
+    "chinatown->v_ls_mustache->bike": {
+      "outward": 2349,
+      "return": 2349
+    },
+    "chinatown->v_ls_mustache->drive": {
+      "outward": 1406,
+      "return": 1476
+    },
+    "chinatown->v_pl_thalia->walk": {
+      "outward": 1616,
+      "return": 1616
+    },
+    "chinatown->v_pl_thalia->bike": {
+      "outward": 558,
+      "return": 558
+    },
+    "chinatown->v_pl_thalia->drive": {
+      "outward": 447,
+      "return": 469
+    },
+    "chinatown->v_pl_communitybooks->walk": {
+      "outward": 1457,
+      "return": 1457
+    },
+    "chinatown->v_pl_communitybooks->bike": {
+      "outward": 507,
+      "return": 507
+    },
+    "chinatown->v_pl_communitybooks->drive": {
+      "outward": 419,
+      "return": 440
+    },
+    "chinatown->v_pl_kristoffers->walk": {
+      "outward": 1057,
+      "return": 1057
+    },
+    "chinatown->v_pl_kristoffers->bike": {
+      "outward": 379,
+      "return": 379
+    },
+    "chinatown->v_pl_kristoffers->drive": {
+      "outward": 351,
+      "return": 369
+    },
+    "chinatown->v_hp_57thbooks->walk": {
+      "outward": 5705,
+      "return": 5705
+    },
+    "chinatown->v_hp_57thbooks->bike": {
+      "outward": 1866,
+      "return": 1866
+    },
+    "chinatown->v_hp_57thbooks->drive": {
+      "outward": 1148,
+      "return": 1205
+    },
+    "chinatown->v_hp_semcoop->walk": {
+      "outward": 5715,
+      "return": 5715
+    },
+    "chinatown->v_hp_semcoop->bike": {
+      "outward": 1870,
+      "return": 1870
+    },
+    "chinatown->v_hp_semcoop->drive": {
+      "outward": 1149,
+      "return": 1206
+    },
+    "chinatown->v_hp_medici->walk": {
+      "outward": 5726,
+      "return": 5726
+    },
+    "chinatown->v_hp_medici->bike": {
+      "outward": 1873,
+      "return": 1873
+    },
+    "chinatown->v_hp_medici->drive": {
+      "outward": 1151,
+      "return": 1209
+    },
+    "chinatown->v_lv_unabridged->walk": {
+      "outward": 7477,
+      "return": 7477
+    },
+    "chinatown->v_lv_unabridged->bike": {
+      "outward": 2434,
+      "return": 2434
+    },
+    "chinatown->v_lv_unabridged->drive": {
+      "outward": 1452,
+      "return": 1525
+    },
+    "chinatown->v_lv_musicbox->walk": {
+      "outward": 8413,
+      "return": 8413
+    },
+    "chinatown->v_lv_musicbox->bike": {
+      "outward": 2733,
+      "return": 2733
+    },
+    "chinatown->v_lv_musicbox->drive": {
+      "outward": 1612,
+      "return": 1693
+    },
+    "chinatown->v_wl_sawada->walk": {
+      "outward": 2836,
+      "return": 2836
+    },
+    "chinatown->v_wl_sawada->bike": {
+      "outward": 948,
+      "return": 948
+    },
+    "chinatown->v_wl_sawada->drive": {
+      "outward": 656,
+      "return": 689
+    },
+    "chinatown->v_ct_library->walk": {
+      "outward": 160,
+      "return": 160
+    },
+    "chinatown->v_ct_library->bike": {
+      "outward": 92,
+      "return": 92
+    },
+    "chinatown->v_ct_library->drive": {
+      "outward": 197,
+      "return": 207
+    },
+    "chinatown->v_ct_pingtom->walk": {
+      "outward": 540,
+      "return": 540
+    },
+    "chinatown->v_ct_pingtom->bike": {
+      "outward": 214,
+      "return": 214
+    },
+    "chinatown->v_ct_pingtom->drive": {
+      "outward": 262,
+      "return": 275
+    },
+    "chinatown->v_lp_conservatory->walk": {
+      "outward": 6100,
+      "return": 6100
+    },
+    "chinatown->v_lp_conservatory->bike": {
+      "outward": 1993,
+      "return": 1993
+    },
+    "chinatown->v_lp_conservatory->drive": {
+      "outward": 1215,
+      "return": 1276
+    },
+    "chinatown->v_lp_arcade->walk": {
+      "outward": 6953,
+      "return": 6953
+    },
+    "chinatown->v_lp_arcade->bike": {
+      "outward": 2266,
+      "return": 2266
+    },
+    "chinatown->v_lp_arcade->drive": {
+      "outward": 1362,
+      "return": 1430
+    }
+  },
+  "interVenueSeconds": {
+    "v_wp_reckless->v_wp_myopic->walk": 424,
+    "v_wp_reckless->v_wp_wormhole->walk": 216,
+    "v_wp_reckless->v_ls_snakes->walk": 1236,
+    "v_wp_reckless->v_ls_citylit->walk": 2694,
+    "v_wp_reckless->v_ls_logantheatre->walk": 2911,
+    "v_wp_reckless->v_ls_mustache->walk": 2062,
+    "v_wp_reckless->v_pl_thalia->walk": 4293,
+    "v_wp_reckless->v_pl_communitybooks->walk": 4354,
+    "v_wp_reckless->v_pl_kristoffers->walk": 4427,
+    "v_wp_reckless->v_hp_57thbooks->walk": 10904,
+    "v_wp_reckless->v_hp_semcoop->walk": 10903,
+    "v_wp_reckless->v_hp_medici->walk": 10927,
+    "v_wp_reckless->v_lv_unabridged->walk": 3480,
+    "v_wp_reckless->v_lv_musicbox->walk": 3729,
+    "v_wp_reckless->v_wl_sawada->walk": 2557,
+    "v_wp_reckless->v_ct_library->walk": 5185,
+    "v_wp_reckless->v_ct_pingtom->walk": 4801,
+    "v_wp_reckless->v_lp_conservatory->walk": 2948,
+    "v_wp_reckless->v_lp_arcade->walk": 2646,
+    "v_wp_myopic->v_wp_reckless->walk": 424,
+    "v_wp_myopic->v_wp_wormhole->walk": 269,
+    "v_wp_myopic->v_ls_snakes->walk": 874,
+    "v_wp_myopic->v_ls_citylit->walk": 2341,
+    "v_wp_myopic->v_ls_logantheatre->walk": 2555,
+    "v_wp_myopic->v_ls_mustache->walk": 1704,
+    "v_wp_myopic->v_pl_thalia->walk": 4634,
+    "v_wp_myopic->v_pl_communitybooks->walk": 4699,
+    "v_wp_myopic->v_pl_kristoffers->walk": 4782,
+    "v_wp_myopic->v_hp_57thbooks->walk": 11263,
+    "v_wp_myopic->v_hp_semcoop->walk": 11261,
+    "v_wp_myopic->v_hp_medici->walk": 11287,
+    "v_wp_myopic->v_lv_unabridged->walk": 3371,
+    "v_wp_myopic->v_lv_musicbox->walk": 3491,
+    "v_wp_myopic->v_wl_sawada->walk": 2921,
+    "v_wp_myopic->v_ct_library->walk": 5547,
+    "v_wp_myopic->v_ct_pingtom->walk": 5163,
+    "v_wp_myopic->v_lp_conservatory->walk": 3000,
+    "v_wp_myopic->v_lp_arcade->walk": 2521,
+    "v_wp_wormhole->v_wp_reckless->walk": 216,
+    "v_wp_wormhole->v_wp_myopic->walk": 269,
+    "v_wp_wormhole->v_ls_snakes->walk": 1083,
+    "v_wp_wormhole->v_ls_citylit->walk": 2547,
+    "v_wp_wormhole->v_ls_logantheatre->walk": 2762,
+    "v_wp_wormhole->v_ls_mustache->walk": 1912,
+    "v_wp_wormhole->v_pl_thalia->walk": 4443,
+    "v_wp_wormhole->v_pl_communitybooks->walk": 4506,
+    "v_wp_wormhole->v_pl_kristoffers->walk": 4581,
+    "v_wp_wormhole->v_hp_57thbooks->walk": 11060,
+    "v_wp_wormhole->v_hp_semcoop->walk": 11059,
+    "v_wp_wormhole->v_hp_medici->walk": 11083,
+    "v_wp_wormhole->v_lv_unabridged->walk": 3415,
+    "v_wp_wormhole->v_lv_musicbox->walk": 3614,
+    "v_wp_wormhole->v_wl_sawada->walk": 2712,
+    "v_wp_wormhole->v_ct_library->walk": 5341,
+    "v_wp_wormhole->v_ct_pingtom->walk": 4956,
+    "v_wp_wormhole->v_lp_conservatory->walk": 2950,
+    "v_wp_wormhole->v_lp_arcade->walk": 2573,
+    "v_ls_snakes->v_wp_reckless->walk": 1236,
+    "v_ls_snakes->v_wp_myopic->walk": 874,
+    "v_ls_snakes->v_wp_wormhole->walk": 1083,
+    "v_ls_snakes->v_ls_citylit->walk": 1541,
+    "v_ls_snakes->v_ls_logantheatre->walk": 1748,
+    "v_ls_snakes->v_ls_mustache->walk": 896,
+    "v_ls_snakes->v_pl_thalia->walk": 5374,
+    "v_ls_snakes->v_pl_communitybooks->walk": 5449,
+    "v_ls_snakes->v_pl_kristoffers->walk": 5559,
+    "v_ls_snakes->v_hp_57thbooks->walk": 12050,
+    "v_ls_snakes->v_hp_semcoop->walk": 12044,
+    "v_ls_snakes->v_hp_medici->walk": 12074,
+    "v_ls_snakes->v_lv_unabridged->walk": 3360,
+    "v_ls_snakes->v_lv_musicbox->walk": 3138,
+    "v_ls_snakes->v_wl_sawada->walk": 3733,
+    "v_ls_snakes->v_ct_library->walk": 6344,
+    "v_ls_snakes->v_ct_pingtom->walk": 5962,
+    "v_ls_snakes->v_lp_conservatory->walk": 3350,
+    "v_ls_snakes->v_lp_arcade->walk": 2522,
+    "v_ls_citylit->v_wp_reckless->walk": 2694,
+    "v_ls_citylit->v_wp_myopic->walk": 2341,
+    "v_ls_citylit->v_wp_wormhole->walk": 2547,
+    "v_ls_citylit->v_ls_snakes->walk": 1541,
+    "v_ls_citylit->v_ls_logantheatre->walk": 298,
+    "v_ls_citylit->v_ls_mustache->walk": 707,
+    "v_ls_citylit->v_pl_thalia->walk": 6633,
+    "v_ls_citylit->v_pl_communitybooks->walk": 6726,
+    "v_ls_citylit->v_pl_kristoffers->walk": 6890,
+    "v_ls_citylit->v_hp_57thbooks->walk": 13380,
+    "v_ls_citylit->v_hp_semcoop->walk": 13362,
+    "v_ls_citylit->v_hp_medici->walk": 13406,
+    "v_ls_citylit->v_lv_unabridged->walk": 4103,
+    "v_ls_citylit->v_lv_musicbox->walk": 3336,
+    "v_ls_citylit->v_wl_sawada->walk": 5171,
+    "v_ls_citylit->v_ct_library->walk": 7722,
+    "v_ls_citylit->v_ct_pingtom->walk": 7346,
+    "v_ls_citylit->v_lp_conservatory->walk": 4525,
+    "v_ls_citylit->v_lp_arcade->walk": 3388,
+    "v_ls_logantheatre->v_wp_reckless->walk": 2911,
+    "v_ls_logantheatre->v_wp_myopic->walk": 2555,
+    "v_ls_logantheatre->v_wp_wormhole->walk": 2762,
+    "v_ls_logantheatre->v_ls_snakes->walk": 1748,
+    "v_ls_logantheatre->v_ls_citylit->walk": 298,
+    "v_ls_logantheatre->v_ls_mustache->walk": 912,
+    "v_ls_logantheatre->v_pl_thalia->walk": 6871,
+    "v_ls_logantheatre->v_pl_communitybooks->walk": 6964,
+    "v_ls_logantheatre->v_pl_kristoffers->walk": 7125,
+    "v_ls_logantheatre->v_hp_57thbooks->walk": 13617,
+    "v_ls_logantheatre->v_hp_semcoop->walk": 13599,
+    "v_ls_logantheatre->v_hp_medici->walk": 13643,
+    "v_ls_logantheatre->v_lv_unabridged->walk": 4143,
+    "v_ls_logantheatre->v_lv_musicbox->walk": 3298,
+    "v_ls_logantheatre->v_wl_sawada->walk": 5395,
+    "v_ls_logantheatre->v_ct_library->walk": 7955,
+    "v_ls_logantheatre->v_ct_pingtom->walk": 7579,
+    "v_ls_logantheatre->v_lp_conservatory->walk": 4637,
+    "v_ls_logantheatre->v_lp_arcade->walk": 3458,
+    "v_ls_mustache->v_wp_reckless->walk": 2062,
+    "v_ls_mustache->v_wp_myopic->walk": 1704,
+    "v_ls_mustache->v_wp_wormhole->walk": 1912,
+    "v_ls_mustache->v_ls_snakes->walk": 896,
+    "v_ls_mustache->v_ls_citylit->walk": 707,
+    "v_ls_mustache->v_ls_logantheatre->walk": 912,
+    "v_ls_mustache->v_pl_thalia->walk": 6097,
+    "v_ls_mustache->v_pl_communitybooks->walk": 6181,
+    "v_ls_mustache->v_pl_kristoffers->walk": 6322,
+    "v_ls_mustache->v_hp_57thbooks->walk": 12817,
+    "v_ls_mustache->v_hp_semcoop->walk": 12804,
+    "v_ls_mustache->v_hp_medici->walk": 12842,
+    "v_ls_mustache->v_lv_unabridged->walk": 3685,
+    "v_ls_mustache->v_lv_musicbox->walk": 3119,
+    "v_ls_mustache->v_wl_sawada->walk": 4552,
+    "v_ls_mustache->v_ct_library->walk": 7133,
+    "v_ls_mustache->v_ct_pingtom->walk": 6754,
+    "v_ls_mustache->v_lp_conservatory->walk": 3959,
+    "v_ls_mustache->v_lp_arcade->walk": 2913,
+    "v_pl_thalia->v_wp_reckless->walk": 4293,
+    "v_pl_thalia->v_wp_myopic->walk": 4634,
+    "v_pl_thalia->v_wp_wormhole->walk": 4443,
+    "v_pl_thalia->v_ls_snakes->walk": 5374,
+    "v_pl_thalia->v_ls_citylit->walk": 6633,
+    "v_pl_thalia->v_ls_logantheatre->walk": 6871,
+    "v_pl_thalia->v_ls_mustache->walk": 6097,
+    "v_pl_thalia->v_pl_communitybooks->walk": 222,
+    "v_pl_thalia->v_pl_kristoffers->walk": 705,
+    "v_pl_thalia->v_hp_57thbooks->walk": 6831,
+    "v_pl_thalia->v_hp_semcoop->walk": 6802,
+    "v_pl_thalia->v_hp_medici->walk": 6860,
+    "v_pl_thalia->v_lv_unabridged->walk": 7056,
+    "v_pl_thalia->v_lv_musicbox->walk": 7771,
+    "v_pl_thalia->v_wl_sawada->walk": 2274,
+    "v_pl_thalia->v_ct_library->walk": 1598,
+    "v_pl_thalia->v_ct_pingtom->walk": 1414,
+    "v_pl_thalia->v_lp_conservatory->walk": 5832,
+    "v_pl_thalia->v_lp_arcade->walk": 6400,
+    "v_pl_communitybooks->v_wp_reckless->walk": 4354,
+    "v_pl_communitybooks->v_wp_myopic->walk": 4699,
+    "v_pl_communitybooks->v_wp_wormhole->walk": 4506,
+    "v_pl_communitybooks->v_ls_snakes->walk": 5449,
+    "v_pl_communitybooks->v_ls_citylit->walk": 6726,
+    "v_pl_communitybooks->v_ls_logantheatre->walk": 6964,
+    "v_pl_communitybooks->v_ls_mustache->walk": 6181,
+    "v_pl_communitybooks->v_pl_thalia->walk": 222,
+    "v_pl_communitybooks->v_pl_kristoffers->walk": 549,
+    "v_pl_communitybooks->v_hp_57thbooks->walk": 6726,
+    "v_pl_communitybooks->v_hp_semcoop->walk": 6700,
+    "v_pl_communitybooks->v_hp_medici->walk": 6754,
+    "v_pl_communitybooks->v_lv_unabridged->walk": 7057,
+    "v_pl_communitybooks->v_lv_musicbox->walk": 7799,
+    "v_pl_communitybooks->v_wl_sawada->walk": 2260,
+    "v_pl_communitybooks->v_ct_library->walk": 1437,
+    "v_pl_communitybooks->v_ct_pingtom->walk": 1254,
+    "v_pl_communitybooks->v_lp_conservatory->walk": 5813,
+    "v_pl_communitybooks->v_lp_arcade->walk": 6415,
+    "v_pl_kristoffers->v_wp_reckless->walk": 4427,
+    "v_pl_kristoffers->v_wp_myopic->walk": 4782,
+    "v_pl_kristoffers->v_wp_wormhole->walk": 4581,
+    "v_pl_kristoffers->v_ls_snakes->walk": 5559,
+    "v_pl_kristoffers->v_ls_citylit->walk": 6890,
+    "v_pl_kristoffers->v_ls_logantheatre->walk": 7125,
+    "v_pl_kristoffers->v_ls_mustache->walk": 6322,
+    "v_pl_kristoffers->v_pl_thalia->walk": 705,
+    "v_pl_kristoffers->v_pl_communitybooks->walk": 549,
+    "v_pl_kristoffers->v_hp_57thbooks->walk": 6555,
+    "v_pl_kristoffers->v_hp_semcoop->walk": 6545,
+    "v_pl_kristoffers->v_hp_medici->walk": 6580,
+    "v_pl_kristoffers->v_lv_unabridged->walk": 6933,
+    "v_pl_kristoffers->v_lv_musicbox->walk": 7752,
+    "v_pl_kristoffers->v_wl_sawada->walk": 2142,
+    "v_pl_kristoffers->v_ct_library->walk": 1015,
+    "v_pl_kristoffers->v_ct_pingtom->walk": 776,
+    "v_pl_kristoffers->v_lp_conservatory->walk": 5634,
+    "v_pl_kristoffers->v_lp_arcade->walk": 6332,
+    "v_hp_57thbooks->v_wp_reckless->walk": 10904,
+    "v_hp_57thbooks->v_wp_myopic->walk": 11263,
+    "v_hp_57thbooks->v_wp_wormhole->walk": 11060,
+    "v_hp_57thbooks->v_ls_snakes->walk": 12050,
+    "v_hp_57thbooks->v_ls_citylit->walk": 13380,
+    "v_hp_57thbooks->v_ls_logantheatre->walk": 13617,
+    "v_hp_57thbooks->v_ls_mustache->walk": 12817,
+    "v_hp_57thbooks->v_pl_thalia->walk": 6831,
+    "v_hp_57thbooks->v_pl_communitybooks->walk": 6726,
+    "v_hp_57thbooks->v_pl_kristoffers->walk": 6555,
+    "v_hp_57thbooks->v_hp_semcoop->walk": 283,
+    "v_hp_57thbooks->v_hp_medici->walk": 110,
+    "v_hp_57thbooks->v_lv_unabridged->walk": 12935,
+    "v_hp_57thbooks->v_lv_musicbox->walk": 13987,
+    "v_hp_57thbooks->v_wl_sawada->walk": 8477,
+    "v_hp_57thbooks->v_ct_library->walk": 5793,
+    "v_hp_57thbooks->v_ct_pingtom->walk": 6181,
+    "v_hp_57thbooks->v_lp_conservatory->walk": 11492,
+    "v_hp_57thbooks->v_lp_arcade->walk": 12502,
+    "v_hp_semcoop->v_wp_reckless->walk": 10903,
+    "v_hp_semcoop->v_wp_myopic->walk": 11261,
+    "v_hp_semcoop->v_wp_wormhole->walk": 11059,
+    "v_hp_semcoop->v_ls_snakes->walk": 12044,
+    "v_hp_semcoop->v_ls_citylit->walk": 13362,
+    "v_hp_semcoop->v_ls_logantheatre->walk": 13599,
+    "v_hp_semcoop->v_ls_mustache->walk": 12804,
+    "v_hp_semcoop->v_pl_thalia->walk": 6802,
+    "v_hp_semcoop->v_pl_communitybooks->walk": 6700,
+    "v_hp_semcoop->v_pl_kristoffers->walk": 6545,
+    "v_hp_semcoop->v_hp_57thbooks->walk": 283,
+    "v_hp_semcoop->v_hp_medici->walk": 328,
+    "v_hp_semcoop->v_lv_unabridged->walk": 12986,
+    "v_hp_semcoop->v_lv_musicbox->walk": 14021,
+    "v_hp_semcoop->v_wl_sawada->walk": 8490,
+    "v_hp_semcoop->v_ct_library->walk": 5805,
+    "v_hp_semcoop->v_ct_pingtom->walk": 6193,
+    "v_hp_semcoop->v_lp_conservatory->walk": 11547,
+    "v_hp_semcoop->v_lp_arcade->walk": 12540,
+    "v_hp_medici->v_wp_reckless->walk": 10927,
+    "v_hp_medici->v_wp_myopic->walk": 11287,
+    "v_hp_medici->v_wp_wormhole->walk": 11083,
+    "v_hp_medici->v_ls_snakes->walk": 12074,
+    "v_hp_medici->v_ls_citylit->walk": 13406,
+    "v_hp_medici->v_ls_logantheatre->walk": 13643,
+    "v_hp_medici->v_ls_mustache->walk": 12842,
+    "v_hp_medici->v_pl_thalia->walk": 6860,
+    "v_hp_medici->v_pl_communitybooks->walk": 6754,
+    "v_hp_medici->v_pl_kristoffers->walk": 6580,
+    "v_hp_medici->v_hp_57thbooks->walk": 110,
+    "v_hp_medici->v_hp_semcoop->walk": 328,
+    "v_hp_medici->v_lv_unabridged->walk": 12948,
+    "v_hp_medici->v_lv_musicbox->walk": 14002,
+    "v_hp_medici->v_wl_sawada->walk": 8497,
+    "v_hp_medici->v_ct_library->walk": 5814,
+    "v_hp_medici->v_ct_pingtom->walk": 6202,
+    "v_hp_medici->v_lp_conservatory->walk": 11503,
+    "v_hp_medici->v_lp_arcade->walk": 12517,
+    "v_lv_unabridged->v_wp_reckless->walk": 3480,
+    "v_lv_unabridged->v_wp_myopic->walk": 3371,
+    "v_lv_unabridged->v_wp_wormhole->walk": 3415,
+    "v_lv_unabridged->v_ls_snakes->walk": 3360,
+    "v_lv_unabridged->v_ls_citylit->walk": 4103,
+    "v_lv_unabridged->v_ls_logantheatre->walk": 4143,
+    "v_lv_unabridged->v_ls_mustache->walk": 3685,
+    "v_lv_unabridged->v_pl_thalia->walk": 7056,
+    "v_lv_unabridged->v_pl_communitybooks->walk": 7057,
+    "v_lv_unabridged->v_pl_kristoffers->walk": 6933,
+    "v_lv_unabridged->v_hp_57thbooks->walk": 12935,
+    "v_lv_unabridged->v_hp_semcoop->walk": 12986,
+    "v_lv_unabridged->v_hp_medici->walk": 12948,
+    "v_lv_unabridged->v_lv_musicbox->walk": 1479,
+    "v_lv_unabridged->v_wl_sawada->walk": 4863,
+    "v_lv_unabridged->v_ct_library->walk": 7378,
+    "v_lv_unabridged->v_ct_pingtom->walk": 7007,
+    "v_lv_unabridged->v_lp_conservatory->walk": 1526,
+    "v_lv_unabridged->v_lp_arcade->walk": 913,
+    "v_lv_musicbox->v_wp_reckless->walk": 3729,
+    "v_lv_musicbox->v_wp_myopic->walk": 3491,
+    "v_lv_musicbox->v_wp_wormhole->walk": 3614,
+    "v_lv_musicbox->v_ls_snakes->walk": 3138,
+    "v_lv_musicbox->v_ls_citylit->walk": 3336,
+    "v_lv_musicbox->v_ls_logantheatre->walk": 3298,
+    "v_lv_musicbox->v_ls_mustache->walk": 3119,
+    "v_lv_musicbox->v_pl_thalia->walk": 7771,
+    "v_lv_musicbox->v_pl_communitybooks->walk": 7799,
+    "v_lv_musicbox->v_pl_kristoffers->walk": 7752,
+    "v_lv_musicbox->v_hp_57thbooks->walk": 13987,
+    "v_lv_musicbox->v_hp_semcoop->walk": 14021,
+    "v_lv_musicbox->v_hp_medici->walk": 14002,
+    "v_lv_musicbox->v_lv_unabridged->walk": 1479,
+    "v_lv_musicbox->v_wl_sawada->walk": 5676,
+    "v_lv_musicbox->v_ct_library->walk": 8318,
+    "v_lv_musicbox->v_ct_pingtom->walk": 7934,
+    "v_lv_musicbox->v_lp_conservatory->walk": 2814,
+    "v_lv_musicbox->v_lp_arcade->walk": 1554,
+    "v_wl_sawada->v_wp_reckless->walk": 2557,
+    "v_wl_sawada->v_wp_myopic->walk": 2921,
+    "v_wl_sawada->v_wp_wormhole->walk": 2712,
+    "v_wl_sawada->v_ls_snakes->walk": 3733,
+    "v_wl_sawada->v_ls_citylit->walk": 5171,
+    "v_wl_sawada->v_ls_logantheatre->walk": 5395,
+    "v_wl_sawada->v_ls_mustache->walk": 4552,
+    "v_wl_sawada->v_pl_thalia->walk": 2274,
+    "v_wl_sawada->v_pl_communitybooks->walk": 2260,
+    "v_wl_sawada->v_pl_kristoffers->walk": 2142,
+    "v_wl_sawada->v_hp_57thbooks->walk": 8477,
+    "v_wl_sawada->v_hp_semcoop->walk": 8490,
+    "v_wl_sawada->v_hp_medici->walk": 8497,
+    "v_wl_sawada->v_lv_unabridged->walk": 4863,
+    "v_wl_sawada->v_lv_musicbox->walk": 5676,
+    "v_wl_sawada->v_ct_library->walk": 2746,
+    "v_wl_sawada->v_ct_pingtom->walk": 2357,
+    "v_wl_sawada->v_lp_conservatory->walk": 3619,
+    "v_wl_sawada->v_lp_arcade->walk": 4250,
+    "v_ct_library->v_wp_reckless->walk": 5185,
+    "v_ct_library->v_wp_myopic->walk": 5547,
+    "v_ct_library->v_wp_wormhole->walk": 5341,
+    "v_ct_library->v_ls_snakes->walk": 6344,
+    "v_ct_library->v_ls_citylit->walk": 7722,
+    "v_ct_library->v_ls_logantheatre->walk": 7955,
+    "v_ct_library->v_ls_mustache->walk": 7133,
+    "v_ct_library->v_pl_thalia->walk": 1598,
+    "v_ct_library->v_pl_communitybooks->walk": 1437,
+    "v_ct_library->v_pl_kristoffers->walk": 1015,
+    "v_ct_library->v_hp_57thbooks->walk": 5793,
+    "v_ct_library->v_hp_semcoop->walk": 5805,
+    "v_ct_library->v_hp_medici->walk": 5814,
+    "v_ct_library->v_lv_unabridged->walk": 7378,
+    "v_ct_library->v_lv_musicbox->walk": 8318,
+    "v_ct_library->v_wl_sawada->walk": 2746,
+    "v_ct_library->v_ct_pingtom->walk": 448,
+    "v_ct_library->v_lp_conservatory->walk": 6000,
+    "v_ct_library->v_lp_arcade->walk": 6856,
+    "v_ct_pingtom->v_wp_reckless->walk": 4801,
+    "v_ct_pingtom->v_wp_myopic->walk": 5163,
+    "v_ct_pingtom->v_wp_wormhole->walk": 4956,
+    "v_ct_pingtom->v_ls_snakes->walk": 5962,
+    "v_ct_pingtom->v_ls_citylit->walk": 7346,
+    "v_ct_pingtom->v_ls_logantheatre->walk": 7579,
+    "v_ct_pingtom->v_ls_mustache->walk": 6754,
+    "v_ct_pingtom->v_pl_thalia->walk": 1414,
+    "v_ct_pingtom->v_pl_communitybooks->walk": 1254,
+    "v_ct_pingtom->v_pl_kristoffers->walk": 776,
+    "v_ct_pingtom->v_hp_57thbooks->walk": 6181,
+    "v_ct_pingtom->v_hp_semcoop->walk": 6193,
+    "v_ct_pingtom->v_hp_medici->walk": 6202,
+    "v_ct_pingtom->v_lv_unabridged->walk": 7007,
+    "v_ct_pingtom->v_lv_musicbox->walk": 7934,
+    "v_ct_pingtom->v_wl_sawada->walk": 2357,
+    "v_ct_pingtom->v_ct_library->walk": 448,
+    "v_ct_pingtom->v_lp_conservatory->walk": 5639,
+    "v_ct_pingtom->v_lp_arcade->walk": 6475,
+    "v_lp_conservatory->v_wp_reckless->walk": 2948,
+    "v_lp_conservatory->v_wp_myopic->walk": 3000,
+    "v_lp_conservatory->v_wp_wormhole->walk": 2950,
+    "v_lp_conservatory->v_ls_snakes->walk": 3350,
+    "v_lp_conservatory->v_ls_citylit->walk": 4525,
+    "v_lp_conservatory->v_ls_logantheatre->walk": 4637,
+    "v_lp_conservatory->v_ls_mustache->walk": 3959,
+    "v_lp_conservatory->v_pl_thalia->walk": 5832,
+    "v_lp_conservatory->v_pl_communitybooks->walk": 5813,
+    "v_lp_conservatory->v_pl_kristoffers->walk": 5634,
+    "v_lp_conservatory->v_hp_57thbooks->walk": 11492,
+    "v_lp_conservatory->v_hp_semcoop->walk": 11547,
+    "v_lp_conservatory->v_hp_medici->walk": 11503,
+    "v_lp_conservatory->v_lv_unabridged->walk": 1526,
+    "v_lp_conservatory->v_lv_musicbox->walk": 2814,
+    "v_lp_conservatory->v_wl_sawada->walk": 3619,
+    "v_lp_conservatory->v_ct_library->walk": 6000,
+    "v_lp_conservatory->v_ct_pingtom->walk": 5639,
+    "v_lp_conservatory->v_lp_arcade->walk": 1444,
+    "v_lp_arcade->v_wp_reckless->walk": 2646,
+    "v_lp_arcade->v_wp_myopic->walk": 2521,
+    "v_lp_arcade->v_wp_wormhole->walk": 2573,
+    "v_lp_arcade->v_ls_snakes->walk": 2522,
+    "v_lp_arcade->v_ls_citylit->walk": 3388,
+    "v_lp_arcade->v_ls_logantheatre->walk": 3458,
+    "v_lp_arcade->v_ls_mustache->walk": 2913,
+    "v_lp_arcade->v_pl_thalia->walk": 6400,
+    "v_lp_arcade->v_pl_communitybooks->walk": 6415,
+    "v_lp_arcade->v_pl_kristoffers->walk": 6332,
+    "v_lp_arcade->v_hp_57thbooks->walk": 12502,
+    "v_lp_arcade->v_hp_semcoop->walk": 12540,
+    "v_lp_arcade->v_hp_medici->walk": 12517,
+    "v_lp_arcade->v_lv_unabridged->walk": 913,
+    "v_lp_arcade->v_lv_musicbox->walk": 1554,
+    "v_lp_arcade->v_wl_sawada->walk": 4250,
+    "v_lp_arcade->v_ct_library->walk": 6856,
+    "v_lp_arcade->v_ct_pingtom->walk": 6475,
+    "v_lp_arcade->v_lp_conservatory->walk": 1444
+  }
+}

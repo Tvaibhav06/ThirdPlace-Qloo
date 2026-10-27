@@ -1,0 +1,422 @@
+[
+  {
+    "id": "v_wp_reckless",
+    "qlooEntityId": "7a3e9c12-34f5-48b2-a1b9-8c9d0e1f2a34",
+    "name": "Reckless Records",
+    "neighborhood": "wicker_park",
+    "address": "1379 N Milwaukee Ave, Chicago, IL 60622",
+    "lat": 41.9068,
+    "lon": -87.6743,
+    "subtype": "record_store",
+    "tags": ["vinyl", "indie_music", "wheelchair_accessible", "browsing"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 1200, "highCents": 3000 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "11:00", "close": "20:00" },
+      { "day": "thu", "open": "11:00", "close": "20:00" },
+      { "day": "sat", "open": "10:00", "close": "21:00" }
+    ],
+    "source": { "url": "https://www.reckless.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_wp_myopic",
+    "qlooEntityId": "8b4f0d23-45a6-49c3-b2ca-9d0e1f2a3b45",
+    "name": "Myopic Books",
+    "neighborhood": "wicker_park",
+    "address": "1564 N Milwaukee Ave, Chicago, IL 60622",
+    "lat": 41.9103,
+    "lon": -87.6778,
+    "subtype": "bookstore",
+    "tags": ["used_books", "quiet", "poetry", "reading_nook"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 800, "highCents": 1800 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "11:00", "close": "21:00" },
+      { "day": "thu", "open": "11:00", "close": "21:00" },
+      { "day": "sat", "open": "10:00", "close": "22:00" }
+    ],
+    "source": { "url": "https://www.myopicbookstore.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_wp_wormhole",
+    "qlooEntityId": "9c5a1e34-56b7-4ad4-c3db-0e1f2a3b4c56",
+    "name": "The Wormhole Coffee",
+    "neighborhood": "wicker_park",
+    "address": "1462 N Milwaukee Ave, Chicago, IL 60622",
+    "lat": 41.9084,
+    "lon": -87.6756,
+    "subtype": "cafe",
+    "tags": ["retro_gaming", "conversational", "espresso", "wifi", "vegetarian_options"],
+    "vibe": "conversational",
+    "spend": { "lowCents": 500, "baseCents": 1200, "highCents": 1800 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "07:00", "close": "20:00" },
+      { "day": "thu", "open": "07:00", "close": "20:00" },
+      { "day": "sat", "open": "07:00", "close": "20:00" }
+    ],
+    "source": { "url": "https://thewormholecoffee.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ls_snakes",
+    "qlooEntityId": "e1a89b02-74c1-4b72-91ef-3849102c448a",
+    "name": "Snakes & Lattes Chicago",
+    "neighborhood": "logan_square",
+    "address": "1965 N Milwaukee Ave, Chicago, IL 60647",
+    "lat": 41.9174,
+    "lon": -87.6868,
+    "subtype": "board_game_cafe",
+    "tags": ["board_games", "conversational", "craft_beer", "wifi", "wheelchair_accessible"],
+    "vibe": "conversational",
+    "spend": { "lowCents": 600, "baseCents": 1400, "highCents": 2200 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "11:00", "close": "23:00" },
+      { "day": "thu", "open": "11:00", "close": "23:00" },
+      { "day": "sat", "open": "10:00", "close": "00:00" }
+    ],
+    "source": { "url": "https://www.snakesandlattes.com/chicago", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ls_citylit",
+    "qlooEntityId": "a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6",
+    "name": "City Lit Books",
+    "neighborhood": "logan_square",
+    "address": "2523 N Kedzie Blvd, Chicago, IL 60647",
+    "lat": 41.9272,
+    "lon": -87.7067,
+    "subtype": "bookstore",
+    "tags": ["book_clubs", "fiction", "community", "wheelchair_accessible"],
+    "vibe": "cozy",
+    "spend": { "lowCents": 0, "baseCents": 1000, "highCents": 2000 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "19:00" },
+      { "day": "thu", "open": "10:00", "close": "19:00" },
+      { "day": "sat", "open": "10:00", "close": "18:00" }
+    ],
+    "source": { "url": "https://www.citylitbooks.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ls_logantheatre",
+    "qlooEntityId": "b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7",
+    "name": "Logan Theatre",
+    "neighborhood": "logan_square",
+    "address": "2646 N Milwaukee Ave, Chicago, IL 60647",
+    "lat": 41.9298,
+    "lon": -87.7083,
+    "subtype": "cinema",
+    "tags": ["indie_films", "lounge_bar", "historic", "wheelchair_accessible"],
+    "vibe": "lively",
+    "spend": { "lowCents": 900, "baseCents": 1200, "highCents": 2200 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "13:00", "close": "23:30" },
+      { "day": "thu", "open": "13:00", "close": "23:30" },
+      { "day": "sat", "open": "11:00", "close": "00:00" }
+    ],
+    "source": { "url": "https://www.thelogantheatre.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ls_mustache",
+    "qlooEntityId": "c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8",
+    "name": "Cafe Mustache",
+    "neighborhood": "logan_square",
+    "address": "2313 N Milwaukee Ave, Chicago, IL 60647",
+    "lat": 41.9234,
+    "lon": -87.6976,
+    "subtype": "cafe",
+    "tags": ["live_music", "vinyl_dj", "cozy", "vegetarian_options"],
+    "vibe": "lively",
+    "spend": { "lowCents": 500, "baseCents": 1000, "highCents": 1600 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "07:00", "close": "23:00" },
+      { "day": "thu", "open": "07:00", "close": "23:00" },
+      { "day": "sat", "open": "07:00", "close": "00:00" }
+    ],
+    "source": { "url": "https://cafemustache.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_pl_thalia",
+    "qlooEntityId": "d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9",
+    "name": "Thalia Hall Community Space",
+    "neighborhood": "pilsen",
+    "address": "1807 S Allport St, Chicago, IL 60608",
+    "lat": 41.8578,
+    "lon": -87.6565,
+    "subtype": "community_space",
+    "tags": ["historic_hall", "conversational", "craft_cocktails", "wheelchair_accessible"],
+    "vibe": "lively",
+    "spend": { "lowCents": 0, "baseCents": 1500, "highCents": 2800 },
+    "taxable": true,
+    "tipBp": 1800,
+    "hours": [
+      { "day": "tue", "open": "17:00", "close": "23:00" },
+      { "day": "thu", "open": "17:00", "close": "23:00" },
+      { "day": "sat", "open": "12:00", "close": "00:00" }
+    ],
+    "source": { "url": "https://www.thaliahallchicago.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_pl_communitybooks",
+    "qlooEntityId": "e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0",
+    "name": "Pilsen Community Books",
+    "neighborhood": "pilsen",
+    "address": "1119 W 18th St, Chicago, IL 60608",
+    "lat": 41.8576,
+    "lon": -87.6539,
+    "subtype": "bookstore",
+    "tags": ["worker_owned", "used_books", "social_justice", "wheelchair_accessible"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 800, "highCents": 1600 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "11:00", "close": "19:00" },
+      { "day": "thu", "open": "11:00", "close": "19:00" },
+      { "day": "sat", "open": "10:00", "close": "19:00" }
+    ],
+    "source": { "url": "https://pilsencommunitybooks.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_pl_kristoffers",
+    "qlooEntityId": "f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1",
+    "name": "Kristoffer's Cakes",
+    "neighborhood": "pilsen",
+    "address": "1733 S Halsted St, Chicago, IL 60608",
+    "lat": 41.8588,
+    "lon": -87.6462,
+    "subtype": "cafe",
+    "tags": ["tres_leches", "latte", "conversational", "cozy"],
+    "vibe": "cozy",
+    "spend": { "lowCents": 400, "baseCents": 900, "highCents": 1500 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "08:00", "close": "18:00" },
+      { "day": "thu", "open": "08:00", "close": "18:00" },
+      { "day": "sat", "open": "08:00", "close": "18:00" }
+    ],
+    "source": { "url": "https://kristofferscakes.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_hp_57thbooks",
+    "qlooEntityId": "a7b8c9d0-e1f2-43a4-b5c6-d7e8f9a0b1c2",
+    "name": "57th Street Books",
+    "neighborhood": "hyde_park",
+    "address": "1301 E 57th St, Chicago, IL 60637",
+    "lat": 41.7915,
+    "lon": -87.5936,
+    "subtype": "bookstore",
+    "tags": ["basement_bookstore", "cozy_nook", "academic", "childrens_books"],
+    "vibe": "cozy",
+    "spend": { "lowCents": 0, "baseCents": 1000, "highCents": 2200 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "19:00" },
+      { "day": "thu", "open": "10:00", "close": "19:00" },
+      { "day": "sat", "open": "10:00", "close": "18:00" }
+    ],
+    "source": { "url": "https://www.semcoop.com/57th-street-books", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_hp_semcoop",
+    "qlooEntityId": "b8c9d0e1-f2a3-44b5-c6d7-e8f9a0b1c2d3",
+    "name": "Seminary Co-op Bookstore",
+    "neighborhood": "hyde_park",
+    "address": "5751 S Woodlawn Ave, Chicago, IL 60637",
+    "lat": 41.7903,
+    "lon": -87.5968,
+    "subtype": "bookstore",
+    "tags": ["scholarly", "massive_catalog", "not_for_profit", "wheelchair_accessible"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 1200, "highCents": 2800 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "18:00" },
+      { "day": "thu", "open": "10:00", "close": "18:00" },
+      { "day": "sat", "open": "10:00", "close": "18:00" }
+    ],
+    "source": { "url": "https://www.semcoop.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_hp_medici",
+    "qlooEntityId": "c9d0e1f2-a3b4-45c6-d7e8-f9a0b1c2d3e4",
+    "name": "Medici on 57th",
+    "neighborhood": "hyde_park",
+    "address": "1327 E 57th St, Chicago, IL 60637",
+    "lat": 41.7915,
+    "lon": -87.5928,
+    "subtype": "cafe",
+    "tags": ["bakery", "campus_staple", "milkshakes", "vegetarian_options"],
+    "vibe": "conversational",
+    "spend": { "lowCents": 600, "baseCents": 1300, "highCents": 2000 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "07:00", "close": "22:00" },
+      { "day": "thu", "open": "07:00", "close": "22:00" },
+      { "day": "sat", "open": "08:00", "close": "22:00" }
+    ],
+    "source": { "url": "https://medici57.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_lv_unabridged",
+    "qlooEntityId": "d0e1f2a3-b4c5-46d7-e8f9-a0b1c2d3e4f5",
+    "name": "Unabridged Bookstore",
+    "neighborhood": "lakeview",
+    "address": "3251 N Broadway, Chicago, IL 60657",
+    "lat": 41.9412,
+    "lon": -87.6443,
+    "subtype": "bookstore",
+    "tags": ["lgbtq_literature", "yellow_tags", "independent", "wheelchair_accessible"],
+    "vibe": "cozy",
+    "spend": { "lowCents": 0, "baseCents": 1000, "highCents": 2200 },
+    "taxable": true,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "19:00" },
+      { "day": "thu", "open": "10:00", "close": "19:00" },
+      { "day": "sat", "open": "10:00", "close": "19:00" }
+    ],
+    "source": { "url": "https://www.unabridgedbookstore.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_lv_musicbox",
+    "qlooEntityId": "e1f2a3b4-c5d6-47e8-f9a0-b1c2d3e4f5a6",
+    "name": "Music Box Theatre",
+    "neighborhood": "lakeview",
+    "address": "3733 N Southport Ave, Chicago, IL 60657",
+    "lat": 41.9501,
+    "lon": -87.6638,
+    "subtype": "cinema",
+    "tags": ["35mm_films", "cult_cinema", "historic_organ", "lounge_bar"],
+    "vibe": "lively",
+    "spend": { "lowCents": 1100, "baseCents": 1400, "highCents": 2500 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "13:00", "close": "23:00" },
+      { "day": "thu", "open": "13:00", "close": "23:00" },
+      { "day": "sat", "open": "11:00", "close": "00:00" }
+    ],
+    "source": { "url": "https://musicboxtheatre.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_wl_sawada",
+    "qlooEntityId": "f2a3b4c5-d6e7-48f9-a0b1-c2d3e4f5a6b7",
+    "name": "Sawada Coffee",
+    "neighborhood": "west_loop",
+    "address": "114 N Green St, Chicago, IL 60607",
+    "lat": 41.8837,
+    "lon": -87.6487,
+    "subtype": "cafe",
+    "tags": ["military_latte", "skate_culture", "industrial", "wheelchair_accessible"],
+    "vibe": "lively",
+    "spend": { "lowCents": 600, "baseCents": 1200, "highCents": 1800 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "07:00", "close": "16:00" },
+      { "day": "thu", "open": "07:00", "close": "16:00" },
+      { "day": "sat", "open": "08:00", "close": "17:00" }
+    ],
+    "source": { "url": "https://sawadacoffee.com", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ct_library",
+    "qlooEntityId": "a3b4c5d6-e7f8-49a0-b1c2-d3e4f5a6b7c8",
+    "name": "Chinatown Public Library",
+    "neighborhood": "chinatown",
+    "address": "2100 S Wentworth Ave, Chicago, IL 60616",
+    "lat": 41.8539,
+    "lon": -87.6323,
+    "subtype": "community_space",
+    "tags": ["feng_shui", "free_study", "quiet", "wheelchair_accessible", "bilingual"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 0, "highCents": 0 },
+    "taxable": false,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "20:00" },
+      { "day": "thu", "open": "10:00", "close": "20:00" },
+      { "day": "sat", "open": "09:00", "close": "17:00" }
+    ],
+    "source": { "url": "https://www.chipublib.org/locations/19/", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_ct_pingtom",
+    "qlooEntityId": "b4c5d6e7-f8a9-40b1-c2d3-e4f5a6b7c8d9",
+    "name": "Ping Tom Memorial Park",
+    "neighborhood": "chinatown",
+    "address": "1700 S Wentworth Ave, Chicago, IL 60616",
+    "lat": 41.8582,
+    "lon": -87.6347,
+    "subtype": "park",
+    "tags": ["riverfront", "skyline_views", "pagoda", "outdoor_hangout", "wheelchair_accessible"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 0, "highCents": 0 },
+    "taxable": false,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "06:00", "close": "23:00" },
+      { "day": "thu", "open": "06:00", "close": "23:00" },
+      { "day": "sat", "open": "06:00", "close": "23:00" }
+    ],
+    "source": { "url": "https://www.chicagoparkdistrict.com/parks-facilities/tom-ping-memorial-park", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_lp_conservatory",
+    "qlooEntityId": "c5d6e7f8-a9b0-41c2-d3e4-f5a6b7c8d9e0",
+    "name": "Lincoln Park Conservatory",
+    "neighborhood": "lincoln_park",
+    "address": "2391 N Stockton Dr, Chicago, IL 60614",
+    "lat": 41.9251,
+    "lon": -87.6348,
+    "subtype": "park",
+    "tags": ["greenhouse", "tropical_plants", "quiet", "free_entry", "wheelchair_accessible"],
+    "vibe": "contemplative",
+    "spend": { "lowCents": 0, "baseCents": 0, "highCents": 500 },
+    "taxable": false,
+    "tipBp": 0,
+    "hours": [
+      { "day": "tue", "open": "10:00", "close": "17:00" },
+      { "day": "thu", "open": "10:00", "close": "17:00" },
+      { "day": "sat", "open": "10:00", "close": "17:00" }
+    ],
+    "source": { "url": "https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-conservatory", "checkedAt": "2026-10-26" }
+  },
+  {
+    "id": "v_lp_arcade",
+    "qlooEntityId": "d6e7f8a9-b0c1-42d3-e4f5-a6b7c8d9e0f1",
+    "name": "Replay Lincoln Park",
+    "neighborhood": "lincoln_park",
+    "address": "2833 N Sheffield Ave, Chicago, IL 60657",
+    "lat": 41.9338,
+    "lon": -87.6538,
+    "subtype": "arcade_bar",
+    "tags": ["free_arcade", "pinball", "craft_beer", "pop_culture", "wheelchair_accessible"],
+    "vibe": "lively",
+    "spend": { "lowCents": 600, "baseCents": 1500, "highCents": 2500 },
+    "taxable": true,
+    "tipBp": 1000,
+    "hours": [
+      { "day": "tue", "open": "17:00", "close": "02:00" },
+      { "day": "thu", "open": "17:00", "close": "02:00" },
+      { "day": "sat", "open": "12:00", "close": "03:00" }
+    ],
+    "source": { "url": "https://www.replaylincolnpark.com", "checkedAt": "2026-10-26" }
+  }
+]

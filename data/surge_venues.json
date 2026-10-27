@@ -1,0 +1,29 @@
+[
+  {
+    "id": "surge_united_center",
+    "name": "United Center",
+    "capacity": 20917,
+    "lat": 41.8807,
+    "lon": -87.6742,
+    "radiusMiles": 0.75,
+    "note": "Surge trigger: NBA Bulls / NHL Blackhawks games or major concerts"
+  },
+  {
+    "id": "surge_wrigley_field",
+    "name": "Wrigley Field",
+    "capacity": 41649,
+    "lat": 41.9484,
+    "lon": -87.6553,
+    "radiusMiles": 0.75,
+    "note": "Surge trigger: MLB Cubs games or summer stadium tours"
+  },
+  {
+    "id": "surge_soldier_field",
+    "name": "Soldier Field",
+    "capacity": 61500,
+    "lat": 41.8623,
+    "lon": -87.6167,
+    "radiusMiles": 1.0,
+    "note": "Surge trigger: NFL Bears / MLS Fire or major stadium concerts"
+  }
+]

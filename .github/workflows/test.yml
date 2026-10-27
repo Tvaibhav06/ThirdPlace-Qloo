@@ -1,0 +1,45 @@
+name: CI Test Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run Master Invariant & Ledger Tests
+        run: npm run test:ledger
+
+      - name: Run Constraint Validator Tests
+        run: npm run test:validator
+
+      - name: Run Qloo Client & Schema Tests
+        run: npm run test:qloo
+
+      - name: Run Bounded Orchestrator Tests
+        run: npm run test:orchestrator
+
+      - name: Run Controlled Baseline Evaluation
+        run: npm run test:eval
+
+      - name: Production Build
+        run: npm run build
+
+      - name: Audit Bundle Secrets
+        run: npm run audit:secrets
