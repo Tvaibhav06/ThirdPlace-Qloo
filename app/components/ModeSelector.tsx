@@ -9,26 +9,26 @@ export function ModeSelector({
   setMode: (m: 'squad' | 'solo') => void;
 }) {
   return (
-    <div className="flex bg-slate-900 p-1.5 rounded-xl border border-slate-800 max-w-md mx-auto mb-6">
+    <div className="flex items-center gap-8 border-b border-[#d4cdbe] mb-8 pb-0">
       <button
         onClick={() => setMode('squad')}
-        className={`flex-1 py-2.5 px-4 rounded-lg text-xs md:text-sm font-semibold transition-all ${
+        className={`pb-2.5 text-xs font-mono uppercase tracking-widest transition-all -mb-[1px] ${
           mode === 'squad'
-            ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-            : 'text-slate-400 hover:text-slate-200'
+            ? 'font-bold text-[#18181b] border-b-2 border-[#18181b]'
+            : 'text-[#857f72] hover:text-[#18181b]'
         }`}
       >
-        👥 Squad Consensus Mode
+        01 SQUAD CONSENSUS
       </button>
       <button
         onClick={() => setMode('solo')}
-        className={`flex-1 py-2.5 px-4 rounded-lg text-xs md:text-sm font-semibold transition-all ${
+        className={`pb-2.5 text-xs font-mono uppercase tracking-widest transition-all -mb-[1px] ${
           mode === 'solo'
-            ? 'bg-indigo-600 text-white shadow-md shadow-indigo-600/30'
-            : 'text-slate-400 hover:text-slate-200'
+            ? 'font-bold text-[#18181b] border-b-2 border-[#18181b]'
+            : 'text-[#857f72] hover:text-[#18181b]'
         }`}
       >
-        👤 Solo Weekly Routine
+        02 SOLO WEEKLY ROUTINE
       </button>
     </div>
   );

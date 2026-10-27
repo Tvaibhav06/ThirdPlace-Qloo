@@ -91,38 +91,43 @@ export function SquadForm({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-      <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+    <form onSubmit={handleSubmit} className="border border-[#1c1917] bg-[#efeae1] p-6 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-[#d4cdbe]">
         <div>
-          <h2 className="text-lg font-semibold text-white">Squad Hangout Configuration</h2>
-          <p className="text-xs text-slate-400 mt-0.5">
-            Privacy Guarantee: Friend display labels stay strictly in your browser (M1..M4 aliases on server).
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+              02 SQUAD CONFIGURATION DOSSIER
+            </span>
+            <span className="text-[10px] font-mono text-[#857f72]">M1..M4 Isolation Mode</span>
+          </div>
+          <p className="text-xs text-[#57534e] mt-1 font-serif">
+            Friend labels remain strictly client-side. Only blind aliases and tastes leave for Qloo evaluation.
           </p>
         </div>
         <div className="flex items-center gap-2">
-          <label className="text-xs font-mono text-slate-300 flex items-center gap-1.5 cursor-pointer">
+          <label className="text-xs font-mono text-[#18181b] flex items-center gap-2 cursor-pointer bg-[#f6f4ee] px-3 py-1.5 border border-[#1c1917]">
             <input
               type="checkbox"
               checked={blindCapMode}
               onChange={e => setBlindCapMode(e.target.checked)}
-              className="rounded bg-slate-800 border-slate-700 text-indigo-500 focus:ring-0"
+              className="accent-[#18181b]"
             />
-            <span>Blind Cap Mode (Active)</span>
+            <span className="font-bold text-[11px] uppercase tracking-wider">Blind Cap Mode [Active]</span>
           </label>
         </div>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {members.map((m, idx) => (
-          <div key={m.alias} className="bg-slate-950/60 border border-slate-800/80 rounded-xl p-4">
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-xs font-mono font-bold text-indigo-400 uppercase tracking-wide">
-                {m.alias} • {m.label}
+          <div key={m.alias} className="bg-[#f6f4ee] border border-[#1c1917] p-4">
+            <div className="flex items-center justify-between mb-3 border-b border-[#d4cdbe] pb-2">
+              <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+                M0{idx + 1} • {m.label}
               </span>
               <div className="flex items-center gap-2">
-                <span className="text-xs text-slate-400">Budget Cap:</span>
+                <span className="text-[11px] font-mono text-[#57534e] uppercase">Budget Cap:</span>
                 <div className="relative">
-                  <span className="absolute left-2.5 top-1.5 text-xs text-slate-400">$</span>
+                  <span className="absolute left-2 top-1 text-xs text-[#57534e] font-mono">$</span>
                   <input
                     type="number"
                     value={m.capDollars}
@@ -130,7 +135,7 @@ export function SquadForm({
                       const val = parseFloat(e.target.value) || 0;
                       setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, capDollars: val } : item)));
                     }}
-                    className="w-20 pl-6 pr-2 py-1 text-xs bg-slate-900 border border-slate-700 rounded-lg text-white font-mono"
+                    className="w-20 pl-5 pr-2 py-0.5 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono font-bold"
                   />
                 </div>
               </div>
@@ -138,14 +143,16 @@ export function SquadForm({
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
               <div>
-                <label className="block text-[11px] text-slate-400 mb-1">Origin Neighborhood</label>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+                  Origin Station / District
+                </label>
                 <select
                   value={m.origin}
                   onChange={e => {
                     const val = e.target.value;
                     setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, origin: val } : item)));
                   }}
-                  className="w-full py-1.5 px-3 text-xs bg-slate-900 border border-slate-700 rounded-lg text-slate-200"
+                  className="w-full py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                 >
                   {NEIGHBORHOODS.map(n => (
                     <option key={n.id} value={n.id}>
@@ -156,14 +163,16 @@ export function SquadForm({
               </div>
 
               <div>
-                <label className="block text-[11px] text-slate-400 mb-1">Commute Mode</label>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+                  Transit Mode
+                </label>
                 <select
                   value={m.mode}
                   onChange={e => {
                     const val = e.target.value;
                     setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, mode: val } : item)));
                   }}
-                  className="w-full py-1.5 px-3 text-xs bg-slate-900 border border-slate-700 rounded-lg text-slate-200"
+                  className="w-full py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                 >
                   {TRANSIT_MODES.map(t => (
                     <option key={t.id} value={t.id}>
@@ -176,7 +185,9 @@ export function SquadForm({
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div>
-                <label className="block text-[11px] text-slate-400 mb-1">Media Seed 1 (Book, Film, Game, Music)</label>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+                  Qloo Media Seed 01
+                </label>
                 <div className="flex gap-2">
                   <input
                     type="text"
@@ -186,7 +197,7 @@ export function SquadForm({
                       setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, seed1Text: val } : item)));
                     }}
                     placeholder="e.g. Dune"
-                    className="flex-1 py-1 px-2.5 text-xs bg-slate-900 border border-slate-700 rounded-lg text-white"
+                    className="flex-1 py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                   />
                   <select
                     value={m.seed1Domain}
@@ -194,7 +205,7 @@ export function SquadForm({
                       const val = e.target.value;
                       setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, seed1Domain: val } : item)));
                     }}
-                    className="w-24 text-[11px] bg-slate-900 border border-slate-700 rounded-lg text-slate-300"
+                    className="w-24 text-[11px] bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                   >
                     <option value="book">Book</option>
                     <option value="artist">Artist</option>
@@ -206,7 +217,9 @@ export function SquadForm({
               </div>
 
               <div>
-                <label className="block text-[11px] text-slate-400 mb-1">Media Seed 2 (Optional)</label>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+                  Qloo Media Seed 02 (Optional)
+                </label>
                 <div className="flex gap-2">
                   <input
                     type="text"
@@ -216,7 +229,7 @@ export function SquadForm({
                       setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, seed2Text: val } : item)));
                     }}
                     placeholder="e.g. Alvvays"
-                    className="flex-1 py-1 px-2.5 text-xs bg-slate-900 border border-slate-700 rounded-lg text-white"
+                    className="flex-1 py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                   />
                   <select
                     value={m.seed2Domain}
@@ -224,7 +237,7 @@ export function SquadForm({
                       const val = e.target.value;
                       setMembers(prev => prev.map((item, i) => (i === idx ? { ...item, seed2Domain: val } : item)));
                     }}
-                    className="w-24 text-[11px] bg-slate-900 border border-slate-700 rounded-lg text-slate-300"
+                    className="w-24 text-[11px] bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
                   >
                     <option value="book">Book</option>
                     <option value="artist">Artist</option>
@@ -239,22 +252,22 @@ export function SquadForm({
         ))}
       </div>
 
-      <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
-        <div className="text-xs text-slate-400">
-          Max One-Way Travel:{' '}
-          <span className="text-white font-mono font-bold">{maxOneWayMinutes} min</span>
+      <div className="mt-6 pt-4 border-t border-[#d4cdbe] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="text-xs font-mono text-[#57534e]">
+          Max Transit Commute Window:{' '}
+          <span className="text-[#18181b] font-bold">{maxOneWayMinutes} min one-way</span>
         </div>
         <button
           type="submit"
           disabled={loading}
-          className="py-3 px-6 rounded-xl font-semibold text-sm bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white shadow-lg shadow-indigo-600/30 transition-all flex items-center gap-2"
+          className="py-2.5 px-6 font-mono font-bold text-xs uppercase tracking-wider bg-[#121212] hover:bg-black disabled:opacity-50 text-white border border-[#121212] transition-colors flex items-center justify-center gap-2"
         >
           {loading ? (
             <>
-              <span className="animate-spin text-lg">⚙</span> Running Agent Plan...
+              <span className="animate-spin">⚙</span> Executing Consensus Search...
             </>
           ) : (
-            <>Find Consensus Hangout Plan →</>
+            <>Triage Latest Consensus Plan →</>
           )}
         </button>
       </div>

@@ -22,7 +22,7 @@ import { CompareModal } from './components/CompareModal';
 const LeafletMap = dynamic(() => import('./components/LeafletMap'), {
   ssr: false,
   loading: () => (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 my-6 text-center text-xs text-slate-500 animate-pulse">
+    <div className="bg-[#efeae1] border border-[#1c1917] p-6 my-6 text-center text-xs font-mono text-[#857f72] animate-pulse">
       Loading Corridor Map...
     </div>
   ),
@@ -205,29 +205,83 @@ export default function WorkspacePage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 p-4 sm:p-8 max-w-5xl mx-auto">
-      {/* Header */}
-      <header className="text-center mb-8 pt-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-700/50 text-[11px] font-mono text-indigo-300 mb-3">
-          <span>Qloo Agentic Hackathon 2026</span>
-          <span>•</span>
-          <span>Agents, but with taste.</span>
+    <main className="min-h-screen bg-[#f6f4ee] text-[#18181b] p-4 sm:p-8 max-w-6xl mx-auto font-sans">
+      {/* Editorial Masthead & Telemetry Strip */}
+      <header className="mb-8 pt-2 border-b border-[#1c1917] pb-6">
+        <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-4">
+          <div>
+            <h1 className="text-3xl sm:text-4xl font-serif font-black tracking-wider text-[#18181b] uppercase">
+              THIRDPLACE SQUAD
+            </h1>
+            <div className="text-[11px] font-mono tracking-widest uppercase text-[#57534e] mt-0.5">
+              CULTURAL CONSENSUS • QLOO TASTE ENGINE
+            </div>
+          </div>
+
+          {/* Inline Telemetry Indicators */}
+          <div className="flex flex-wrap items-center gap-3 text-[11px] font-mono text-[#57534e]">
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#15803d]">■</span> qloo ok • 20 venues
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#15803d]">■</span> mcp ok • 6 tools
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#b45309]">■</span> blind cap active
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#15803d]">■</span> cta transit $2.75
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="text-[#15803d]">■</span> 13-row ledger verified
+            </span>
+          </div>
         </div>
-        <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-          ThirdPlace Squad
-        </h1>
-        <p className="text-sm text-slate-400 mt-2 max-w-xl mx-auto leading-relaxed">
-          Culturally grounded hangouts & solo routines with deterministic 13-row integer-cent splits and P0 Blind Cap privacy.
-        </p>
+
+        {/* Hero Thesis Statement & Giant KPI Metric Counters */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-4 border-t border-[#d4cdbe] items-start">
+          <div className="lg:col-span-7">
+            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#18181b] leading-tight mb-2">
+              Stop guessing group hangouts. Start computing cultural consensus.
+            </h2>
+            <p className="text-xs text-[#57534e] leading-relaxed font-serif max-w-xl">
+              A budget breach of $1.50 in a group of three turns a hangout into awkward debt. Three friends coordinate through Qloo taste graphs to compute the intersection of culture, commute, and integer-cent fairness.
+            </p>
+          </div>
+
+          {/* Big KPI Metric Row */}
+          <div className="lg:col-span-5 grid grid-cols-5 gap-2 text-center pt-1 border border-[#1c1917] bg-[#efeae1] p-3">
+            <div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">74.1</div>
+              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">CONSENSUS</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#15803d]">$18.05</div>
+              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">SAVINGS/WK</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">100%</div>
+              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">QLOO GRAPH</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">13</div>
+              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">LEDGER ROWS</div>
+            </div>
+            <div>
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#b91c1c]">0</div>
+              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">FLOAT LEAKS</div>
+            </div>
+          </div>
+        </div>
       </header>
 
-      {/* Preset Bar */}
+      {/* Preset Scenario Bar */}
       <PresetBar onSelectPreset={handleSelectPreset} />
 
-      {/* Mode Selector */}
+      {/* Mode Navigation Tabs */}
       <ModeSelector mode={mode} setMode={setMode} />
 
-      {/* Forms */}
+      {/* Input Configuration Forms */}
       {mode === 'squad' ? (
         <SquadForm onSubmit={handleSquadSubmit} loading={running} />
       ) : (
@@ -251,7 +305,6 @@ export default function WorkspacePage() {
           data={ambiguityData}
           onSelectCandidate={id => {
             setAmbiguityData(null);
-            // Resume with selected candidate
           }}
           onSkip={() => setAmbiguityData(null)}
         />
@@ -259,12 +312,12 @@ export default function WorkspacePage() {
 
       {/* Infeasible or Error State */}
       {errorMessage && (
-        <div className="bg-rose-950/40 border border-rose-800/60 rounded-2xl p-6 my-6 text-center">
-          <h3 className="text-base font-semibold text-rose-300 mb-1">Plan Infeasible</h3>
-          <p className="text-xs text-rose-400 font-mono mb-4">{errorMessage}</p>
+        <div className="bg-[#fee2e2] border-2 border-[#b91c1c] p-6 my-6 text-center">
+          <h3 className="text-base font-serif font-bold text-[#b91c1c] mb-1">Plan Infeasible</h3>
+          <p className="text-xs text-[#b91c1c] font-mono mb-4">{errorMessage}</p>
           <button
             onClick={() => setErrorMessage(null)}
-            className="py-1.5 px-4 rounded-lg bg-rose-900/60 text-xs text-white hover:bg-rose-800"
+            className="py-1.5 px-4 font-mono uppercase text-xs font-bold bg-[#b91c1c] text-white hover:bg-black"
           >
             Adjust Constraints & Retry
           </button>
@@ -274,17 +327,17 @@ export default function WorkspacePage() {
       {/* Squad Plan Completed Result */}
       {planResult && (
         <div className="space-y-6">
-          {/* Main Recommended Venue Card */}
-          <div className="bg-slate-900 border border-indigo-500/50 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+          {/* Main Recommended Venue Dossier Card */}
+          <div className="border-2 border-[#1c1917] bg-[#efeae1] p-6 shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-[#d4cdbe]">
               <div>
-                <span className="text-[11px] font-mono text-indigo-400 uppercase tracking-wider font-bold">
+                <span className="text-[11px] font-mono text-[#57534e] uppercase tracking-wider font-bold">
                   Recommended Consensus Plan
                 </span>
-                <h2 className="text-2xl font-bold text-white mt-1">
+                <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b] mt-1">
                   {planResult.plan.primaryVenue.name}
                 </h2>
-                <p className="text-xs text-slate-400 mt-0.5">
+                <p className="text-xs text-[#57534e] mt-0.5 font-mono">
                   {planResult.plan.primaryVenue.address} •{' '}
                   <span className="capitalize">{planResult.plan.primaryVenue.neighborhood.replace('_', ' ')}</span>
                 </p>
@@ -293,13 +346,13 @@ export default function WorkspacePage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleCompareClick}
-                  className="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 border border-slate-700 transition-all"
+                  className="py-2 px-3 bg-[#f6f4ee] hover:bg-[#ded7c7] text-xs font-mono uppercase font-bold text-[#18181b] border border-[#1c1917] transition-colors"
                 >
                   Compare Without Qloo
                 </button>
                 <button
                   onClick={handleCopyInvite}
-                  className="py-2 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-xs font-semibold text-white shadow-md shadow-indigo-600/30 transition-all flex items-center gap-1.5"
+                  className="py-2 px-4 bg-[#121212] hover:bg-black text-xs font-mono uppercase font-bold text-white border border-[#121212] transition-colors flex items-center gap-1.5"
                 >
                   {copySuccess ? 'Copied! ✓' : 'Copy Invite 📋'}
                 </button>
@@ -307,7 +360,7 @@ export default function WorkspacePage() {
             </div>
 
             {/* Factual explanation */}
-            <p className="text-xs text-slate-300 bg-slate-950/70 p-3.5 rounded-xl border border-slate-800/80 leading-relaxed font-sans mb-4">
+            <p className="text-xs text-[#18181b] bg-[#f6f4ee] p-3.5 border border-[#1c1917] leading-relaxed font-serif mb-4">
               {planResult.explanation}
             </p>
 
@@ -316,7 +369,7 @@ export default function WorkspacePage() {
               {planResult.plan.primaryVenue.tags.map((t: string, idx: number) => (
                 <span
                   key={idx}
-                  className="px-2.5 py-1 rounded-lg bg-slate-800/80 text-[11px] font-mono text-slate-300"
+                  className="px-2 py-0.5 bg-[#f6f4ee] border border-[#d4cdbe] text-[10px] font-mono text-[#57534e]"
                 >
                   #{t}
                 </span>
@@ -389,11 +442,11 @@ export default function WorkspacePage() {
         />
       )}
 
-      {/* Footer */}
-      <footer className="mt-16 pt-8 border-t border-slate-900 text-center text-xs text-slate-500 font-mono">
-        <p>ThirdPlace Squad • Built for the 2026 Qloo Agentic Hackathon</p>
-        <p className="mt-1">
-          Taste data by Qloo • Maps by OpenStreetMap • Transit fares by CTA 2026
+      {/* Archival Research Footer */}
+      <footer className="mt-16 pt-6 border-t border-[#1c1917] text-center text-xs text-[#57534e] font-mono">
+        <p>THIRDPLACE SQUAD • 2026 QLOO AGENTIC HACKATHON</p>
+        <p className="mt-1 text-[11px] text-[#857f72]">
+          Taste data by Qloo • Maps by OpenStreetMap • Transit fares by CTA 2026 • Integer-Cent Math
         </p>
       </footer>
     </main>

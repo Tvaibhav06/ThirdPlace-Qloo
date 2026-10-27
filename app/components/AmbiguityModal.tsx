@@ -16,46 +16,46 @@ export function AmbiguityModal({
   const current = data.ambiguousSeeds[0];
 
   return (
-    <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl max-w-lg w-full p-6 shadow-2xl">
-        <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
+    <div className="fixed inset-0 bg-[#18181b]/60 backdrop-blur-xs z-50 flex items-center justify-center p-4">
+      <div className="bg-[#efeae1] border-2 border-[#1c1917] max-w-lg w-full p-6 shadow-2xl">
+        <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#d4cdbe]">
           <div>
-            <span className="text-xs font-mono text-indigo-400 uppercase tracking-wider">
-              Disambiguation Required (UI State 3)
+            <span className="text-xs font-mono text-[#57534e] uppercase tracking-wider font-bold">
+              Disambiguation Dossier (UI State 3)
             </span>
-            <h3 className="text-base font-semibold text-white mt-1">
+            <h3 className="text-base font-serif font-bold text-[#18181b] mt-0.5">
               Multiple matches found for "{current.query}" ({current.alias})
             </h3>
           </div>
           <button
             onClick={onSkip}
-            className="text-xs text-slate-400 hover:text-white px-2 py-1 rounded bg-slate-800"
+            className="text-xs font-mono text-[#18181b] hover:bg-[#ded7c7] px-2 py-1 border border-[#1c1917]"
           >
-            Skip Seed
+            [ Skip Seed ]
           </button>
         </div>
 
-        <p className="text-xs text-slate-300 mb-4">
-          Qloo identified several entities matching this title. Please select the intended title:
+        <p className="text-xs text-[#57534e] mb-4 font-serif">
+          Qloo taste engine identified several entities matching this query. Select the intended title:
         </p>
 
-        <div className="space-y-2 mb-6 max-h-64 overflow-y-auto">
+        <div className="space-y-2 mb-4 max-h-64 overflow-y-auto">
           {current.candidates.map(c => (
             <button
               key={c.id}
               onClick={() => onSelectCandidate(c.id)}
-              className="w-full text-left p-3 rounded-xl bg-slate-950 hover:bg-indigo-950/40 border border-slate-800 hover:border-indigo-600/50 transition-all group"
+              className="w-full text-left p-3 bg-[#f6f4ee] hover:bg-[#ded7c7] border border-[#1c1917] transition-colors group"
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-sm font-semibold text-white group-hover:text-indigo-200">
+                <span className="text-sm font-serif font-bold text-[#18181b] group-hover:underline">
                   {c.name}
                 </span>
-                <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                <span className="text-[10px] font-mono uppercase px-1.5 py-0.5 bg-[#ded7c7] text-[#18181b] border border-[#d4cdbe]">
                   {c.type.replace('urn:entity:', '')}
                 </span>
               </div>
               {c.disambiguation && (
-                <p className="text-xs text-slate-400 line-clamp-2">{c.disambiguation}</p>
+                <p className="text-xs text-[#57534e] font-serif line-clamp-2">{c.disambiguation}</p>
               )}
             </button>
           ))}

@@ -54,7 +54,7 @@ export function LeafletMap({
       const createIcon = (color: string) =>
         L.divIcon({
           className: 'custom-pin',
-          html: `<div style="background-color: ${color}; width: 14px; height: 14px; border-radius: 50%; border: 2px solid white; box-shadow: 0 0 6px rgba(0,0,0,0.5);"></div>`,
+          html: `<div style="background-color: ${color}; width: 14px; height: 14px; border-radius: 0; border: 2px solid #ffffff; box-shadow: 0 0 4px rgba(0,0,0,0.4);"></div>`,
           iconSize: [14, 14],
           iconAnchor: [7, 7]
         });
@@ -63,7 +63,7 @@ export function LeafletMap({
       venues.forEach(v => {
         const isSelected = selectedVenue && selectedVenue.id === v.id;
         const marker = L.marker([v.lat, v.lon], {
-          icon: createIcon(isSelected ? '#6366f1' : '#94a3b8')
+          icon: createIcon(isSelected ? '#121212' : '#857f72')
         }).addTo(map);
 
         marker.bindPopup(`<strong>${v.name}</strong><br/>${v.subtype?.replace('_', ' ')}<br/>${v.address}`);
@@ -73,10 +73,10 @@ export function LeafletMap({
       // Draw route polyline if present
       if (polylineCoords && polylineCoords.length > 1) {
         L.polyline(polylineCoords, {
-          color: '#6366f1',
-          weight: 4,
-          opacity: 0.8,
-          dashArray: '6, 6'
+          color: '#121212',
+          weight: 3,
+          opacity: 0.9,
+          dashArray: '4, 4'
         }).addTo(map);
       }
 
@@ -95,12 +95,17 @@ export function LeafletMap({
   }, [venues, selectedVenue, polylineCoords]);
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 my-6 overflow-hidden">
-      <div className="flex items-center justify-between mb-3 px-2">
-        <h3 className="text-sm font-semibold text-white">Corridor & Venue Geography</h3>
-        <span className="text-[10px] font-mono text-slate-400">Chicago Launch Metro • OpenStreetMap</span>
+    <div className="border border-[#1c1917] bg-[#efeae1] p-4 my-6">
+      <div className="flex items-center justify-between mb-3 border-b border-[#d4cdbe] pb-2">
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+            06 CORRIDOR & VENUE GEOGRAPHY
+          </span>
+          <span className="text-[10px] font-mono text-[#857f72]">Chicago Launch Metro</span>
+        </div>
+        <span className="text-[10px] font-mono text-[#57534e]">41.8781° N, 87.6298° W • OpenStreetMap</span>
       </div>
-      <div ref={mapContainerRef} className="w-full h-72 rounded-xl z-0" />
+      <div ref={mapContainerRef} className="w-full h-72 border border-[#1c1917] z-0" />
     </div>
   );
 }

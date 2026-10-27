@@ -47,21 +47,30 @@ export function SoloForm({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 mb-8">
-      <div className="mb-6 pb-4 border-b border-slate-800">
-        <h2 className="text-lg font-semibold text-white">Solo Weekly Routine Builder</h2>
-        <p className="text-xs text-slate-400 mt-0.5">
-          Build a repeatable 3-slot weekly routine (Tue, Thu, Sat) across distinct third places, benchmarked against the $58.17/wk BLS under-25 average.
-        </p>
+    <form onSubmit={handleSubmit} className="border border-[#1c1917] bg-[#efeae1] p-6 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-[#d4cdbe]">
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+              02 SOLO ROUTINE BLUEPRINT
+            </span>
+            <span className="text-[10px] font-mono text-[#857f72]">3 Slots: Tue / Thu / Sat</span>
+          </div>
+          <p className="text-xs text-[#57534e] mt-1 font-serif">
+            Build a repeatable weekly cadence benchmarked against the $58.17/wk BLS under-25 food and social spend baseline.
+          </p>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <div>
-          <label className="block text-xs text-slate-400 mb-1.5">Home Neighborhood</label>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+        <div className="bg-[#f6f4ee] border border-[#1c1917] p-3">
+          <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+            Home Station / District
+          </label>
           <select
             value={origin}
             onChange={e => setOrigin(e.target.value)}
-            className="w-full py-2 px-3 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-200"
+            className="w-full py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
           >
             {NEIGHBORHOODS.map(n => (
               <option key={n.id} value={n.id}>
@@ -71,67 +80,73 @@ export function SoloForm({
           </select>
         </div>
 
-        <div>
-          <label className="block text-xs text-slate-400 mb-1.5">Weekly Social Budget</label>
+        <div className="bg-[#f6f4ee] border border-[#1c1917] p-3">
+          <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+            Weekly Social Cap (LI-10)
+          </label>
           <div className="relative">
-            <span className="absolute left-3 top-2 text-xs text-slate-400">$</span>
+            <span className="absolute left-2 top-1 text-xs text-[#57534e] font-mono">$</span>
             <input
               type="number"
               value={weeklyCapDollars}
               onChange={e => setWeeklyCapDollars(parseFloat(e.target.value) || 0)}
-              className="w-full pl-7 pr-3 py-1.5 text-xs bg-slate-950 border border-slate-800 rounded-lg text-white font-mono"
+              className="w-full pl-5 pr-2 py-0.5 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono font-bold"
             />
           </div>
-          <span className="text-[10px] text-slate-500 font-mono">BLS Under-25 average: $58.17/wk</span>
+          <span className="text-[10px] text-[#857f72] font-mono mt-1 block">BLS Benchmark: $58.17/wk</span>
         </div>
 
-        <div>
-          <label className="block text-xs text-slate-400 mb-1.5">Primary Commute Mode</label>
+        <div className="bg-[#f6f4ee] border border-[#1c1917] p-3">
+          <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-1">
+            Primary Commute Mode
+          </label>
           <select
             value={preferredMode}
             onChange={e => setPreferredMode(e.target.value)}
-            className="w-full py-2 px-3 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-200"
+            className="w-full py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
           >
             <option value="bike">Bike ($0)</option>
             <option value="walk">Walk ($0)</option>
-            <option value="cta_rail">CTA Rail ($5.50 RT/stop)</option>
-            <option value="cta_bus">CTA Bus ($5.00 RT/stop)</option>
+            <option value="cta_rail">CTA Rail ($5.50 RT)</option>
+            <option value="cta_bus">CTA Bus ($5.00 RT)</option>
           </select>
         </div>
       </div>
 
-      <div className="mb-6">
-        <label className="block text-xs text-slate-400 mb-2">Favorite Cultural Seeds (3 domains for cross-media affinity)</label>
+      <div className="bg-[#f6f4ee] border border-[#1c1917] p-3 mb-6">
+        <label className="block text-[10px] font-mono uppercase tracking-wider text-[#57534e] mb-2">
+          Cross-Domain Qloo Seeds (3 Cultural Anchors)
+        </label>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           <input
             type="text"
             value={seed1}
             onChange={e => setSeed1(e.target.value)}
             placeholder="Book seed (e.g. Dune)"
-            className="py-1.5 px-3 text-xs bg-slate-950 border border-slate-800 rounded-lg text-white"
+            className="py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
           />
           <input
             type="text"
             value={seed2}
             onChange={e => setSeed2(e.target.value)}
             placeholder="Game seed (e.g. Baldur's Gate 3)"
-            className="py-1.5 px-3 text-xs bg-slate-950 border border-slate-800 rounded-lg text-white"
+            className="py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
           />
           <input
             type="text"
             value={seed3}
             onChange={e => setSeed3(e.target.value)}
             placeholder="Music seed (e.g. Alvvays)"
-            className="py-1.5 px-3 text-xs bg-slate-950 border border-slate-800 rounded-lg text-white"
+            className="py-1 px-2 text-xs bg-[#efeae1] border border-[#1c1917] text-[#18181b] font-mono"
           />
         </div>
       </div>
 
-      <div className="pt-4 border-t border-slate-800 flex justify-end">
+      <div className="pt-4 border-t border-[#d4cdbe] flex justify-end">
         <button
           type="submit"
           disabled={loading}
-          className="py-3 px-6 rounded-xl font-semibold text-sm bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 text-white shadow-lg shadow-indigo-600/30 transition-all flex items-center gap-2"
+          className="py-2.5 px-6 font-mono font-bold text-xs uppercase tracking-wider bg-[#121212] hover:bg-black disabled:opacity-50 text-white border border-[#121212] transition-colors flex items-center gap-2"
         >
           {loading ? 'Optimizing 3-Slot Routine...' : 'Generate Weekly Routine →'}
         </button>

@@ -11,51 +11,56 @@ export function WeeklyBurnWaterfall({ routine }: { routine: any }) {
   const savingsDollars = routine.ledger.LI13_WeeklySavingsVsBlsBenchmarkCents / 100;
 
   return (
-    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 my-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-slate-800">
+    <div className="border border-[#1c1917] bg-[#efeae1] p-4 my-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-[#d4cdbe]">
         <div>
-          <h3 className="text-base font-semibold text-white">Solo Weekly Routine & Spend Waterfall</h3>
-          <p className="text-xs text-slate-400 mt-0.5">
-            3 distinct third-place subtypes chosen within your weekly social cap.
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+              03 SOLO WEEKLY ROUTINE & SPEND WATERFALL
+            </span>
+            <span className="text-[10px] font-mono text-[#857f72]">3 Slots: Tue / Thu / Sat</span>
+          </div>
+          <p className="text-xs text-[#57534e] mt-0.5 font-serif">
+            Distinct third-place subtypes chosen within your weekly social cap.
           </p>
         </div>
         <div className="flex items-center gap-3 font-mono text-xs">
-          <div className="bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
-            <span className="text-slate-400">Total Spend:</span>{' '}
-            <strong className="text-emerald-400">${totalWeeklyDollars.toFixed(2)}</strong>
+          <div className="bg-[#f6f4ee] px-3 py-1 border border-[#1c1917]">
+            <span className="text-[#57534e]">Spend:</span>{' '}
+            <strong className="text-[#18181b]">${totalWeeklyDollars.toFixed(2)}</strong>
           </div>
-          <div className="bg-slate-950 px-3 py-1.5 rounded-lg border border-indigo-900/40">
-            <span className="text-slate-400">BLS Savings:</span>{' '}
-            <strong className="text-indigo-400">${savingsDollars.toFixed(2)}/wk</strong>
+          <div className="bg-[#dcfce7] px-3 py-1 border border-[#16a34a]">
+            <span className="text-[#15803d]">BLS Savings:</span>{' '}
+            <strong className="text-[#15803d]">${savingsDollars.toFixed(2)}/wk</strong>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
         {routine.stops.map((s: any, idx: number) => {
           const stopLedger = routine.ledger.stopLedgers[idx]?.row;
           const stopSpend = (stopLedger?.LI09_TotalPerPersonAllInCents ?? 0) / 100;
           const runningSpend = (stopLedger?.LI12_WeeklyRunningTotalCents ?? 0) / 100;
 
           return (
-            <div key={idx} className="bg-slate-950/70 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
+            <div key={idx} className="bg-[#f6f4ee] border border-[#1c1917] p-3 flex flex-col justify-between">
               <div>
-                <div className="flex items-center justify-between text-xs font-mono text-indigo-400 mb-1">
-                  <span>Slot 0{idx + 1}: {s.slot.day.toUpperCase()} {s.slot.start}-{s.slot.end}</span>
-                  <span className="capitalize text-slate-400">{s.venue.subtype.replace('_', ' ')}</span>
+                <div className="flex items-center justify-between text-[10px] font-mono text-[#57534e] mb-1">
+                  <span>SLOT 0{idx + 1}: {s.slot.day.toUpperCase()} {s.slot.start}-{s.slot.end}</span>
+                  <span className="capitalize">{s.venue.subtype.replace('_', ' ')}</span>
                 </div>
-                <h4 className="text-sm font-semibold text-white mt-1">{s.venue.name}</h4>
-                <p className="text-xs text-slate-400 mt-0.5">{s.venue.address}</p>
+                <h4 className="text-sm font-serif font-bold text-[#18181b] mt-1">{s.venue.name}</h4>
+                <p className="text-xs text-[#57534e] mt-0.5 font-mono">{s.venue.address}</p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-slate-800/80 font-mono text-xs flex justify-between items-end">
+              <div className="mt-4 pt-2 border-t border-[#d4cdbe] font-mono text-xs flex justify-between items-end">
                 <div>
-                  <span className="text-[10px] text-slate-500 block">Stop All-In:</span>
-                  <span className="text-emerald-400 font-bold">${stopSpend.toFixed(2)}</span>
+                  <span className="text-[10px] text-[#857f72] block">Stop All-In:</span>
+                  <span className="text-[#18181b] font-bold">${stopSpend.toFixed(2)}</span>
                 </div>
                 <div className="text-right">
-                  <span className="text-[10px] text-slate-500 block">Running Total (LI-12):</span>
-                  <span className="text-slate-200">${runningSpend.toFixed(2)}</span>
+                  <span className="text-[10px] text-[#857f72] block">Running Total (LI-12):</span>
+                  <span className="text-[#18181b] font-bold">${runningSpend.toFixed(2)}</span>
                 </div>
               </div>
             </div>
@@ -63,11 +68,11 @@ export function WeeklyBurnWaterfall({ routine }: { routine: any }) {
         })}
       </div>
 
-      <div className="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs font-mono flex flex-col sm:flex-row items-center justify-between gap-3">
-        <span className="text-slate-400">
-          U.S. Bureau of Labor Statistics (BLS) Under-25 Food Away From Home Benchmark: <strong>$58.17/week</strong>
+      <div className="bg-[#f6f4ee] p-3 border border-[#1c1917] text-xs font-mono flex flex-col sm:flex-row items-center justify-between gap-2">
+        <span className="text-[#57534e]">
+          U.S. Bureau of Labor Statistics (BLS) Under-25 Benchmark: <strong>$58.17/week</strong>
         </span>
-        <span className="text-indigo-400 font-bold">
+        <span className="text-[#15803d] font-bold">
           LI-13 Weekly Discretionary Savings: ${savingsDollars.toFixed(2)} / week
         </span>
       </div>
