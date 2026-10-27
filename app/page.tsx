@@ -19,10 +19,14 @@ import { ProvenanceDrawer } from './components/ProvenanceDrawer';
 import { CompareModal } from './components/CompareModal';
 
 // Dynamically import LeafletMap to avoid SSR window issues
-const LeafletMap = dynamic(
-  () => import('./components/LeafletMap').then(mod => mod.LeafletMap),
-  { ssr: false }
-);
+const LeafletMap = dynamic(() => import('./components/LeafletMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 my-6 text-center text-xs text-slate-500 animate-pulse">
+      Loading Corridor Map...
+    </div>
+  ),
+});
 
 export default function WorkspacePage() {
   const [mode, setMode] = useState<'squad' | 'solo'>('squad');

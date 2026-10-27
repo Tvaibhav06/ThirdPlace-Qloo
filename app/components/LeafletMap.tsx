@@ -87,6 +87,10 @@ export function LeafletMap({
 
     return () => {
       isMounted = false;
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove();
+        mapInstanceRef.current = null;
+      }
     };
   }, [venues, selectedVenue, polylineCoords]);
 
@@ -100,3 +104,5 @@ export function LeafletMap({
     </div>
   );
 }
+
+export default LeafletMap;

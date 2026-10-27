@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
-  output: 'standalone'
+  ...(process.env.BUILD_STANDALONE === 'true' ? { output: 'standalone' } : {})
 };
 
 export default nextConfig;
