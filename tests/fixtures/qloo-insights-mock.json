@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "id": "e1a89b02-74c1-4b72-91ef-3849102c448a",
+      "name": "Snakes & Lattes Chicago",
+      "affinity": 0.88,
+      "popularity": 0.72,
+      "tags": ["board_games", "conversational", "craft_beer"],
+      "location": {
+        "address": "1965 N Milwaukee Ave, Chicago, IL 60647",
+        "lat": 41.9174,
+        "lon": -87.6868
+      }
+    },
+    {
+      "id": "f2a89b02-74c1-4b72-91ef-3849102c448b",
+      "name": "The Wormhole Coffee",
+      "affinity": 0.82,
+      "popularity": 0.68,
+      "tags": ["cozy", "sci-fi", "conversational"],
+      "location": {
+        "address": "1462 N Milwaukee Ave, Chicago, IL 60622",
+        "lat": 41.9084,
+        "lon": -87.6745
+      }
+    }
+  ]
+}

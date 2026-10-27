@@ -1,0 +1,30 @@
+{
+  "shared": [
+    {
+      "tag": "urn:tag:sci-fi",
+      "name": "Sci-Fi & Speculative Fiction",
+      "score": 0.92
+    },
+    {
+      "tag": "urn:tag:board_games",
+      "name": "Tabletop & Board Games",
+      "score": 0.86
+    }
+  ],
+  "distinctive": {
+    "M1": [
+      {
+        "tag": "urn:tag:frank_herbert",
+        "name": "Frank Herbert Works",
+        "score": 0.95
+      }
+    ],
+    "M2": [
+      {
+        "tag": "urn:tag:cyberpunk",
+        "name": "Cyberpunk Aesthetics",
+        "score": 0.89
+      }
+    ]
+  }
+}

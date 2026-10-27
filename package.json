@@ -10,12 +10,16 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "test": "node --test tests/thirdPlaceLedger.test.mjs && tsx tests/qlooClient.test.ts && tsx tests/validator.test.ts",
+    "test": "node --test tests/thirdPlaceLedger.test.mjs && tsx tests/qlooClient.test.ts && tsx tests/seedResolver.test.ts && tsx tests/validator.test.ts && tsx tests/soloScheduler.test.ts && tsx tests/orchestrator.test.ts && tsx tests/evaluation.test.ts",
     "test:ledger": "node --test tests/thirdPlaceLedger.test.mjs",
     "test:validator": "tsx tests/validator.test.ts",
     "test:qloo": "tsx tests/qlooClient.test.ts",
+    "test:seed": "tsx tests/seedResolver.test.ts",
+    "test:solo": "tsx tests/soloScheduler.test.ts",
     "test:orchestrator": "tsx tests/orchestrator.test.ts",
-    "test:eval": "node scripts/run-evaluation.mjs",
+    "test:eval": "tsx tests/evaluation.test.ts",
+    "test:e2e": "playwright test",
+    "eval:gen": "node scripts/run-evaluation.mjs",
     "build:matrix": "node scripts/build-chicago-matrix.mjs",
     "audit:secrets": "node scripts/audit-bundle-secrets.mjs"
   },
@@ -28,6 +32,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@types/leaflet": "^1.9.16",
     "@types/node": "^22.13.4",
     "@types/react": "^19.0.10",
