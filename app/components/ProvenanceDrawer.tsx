@@ -15,7 +15,7 @@ export function ProvenanceDrawer({ provenance }: { provenance: any[] }) {
         <div className="flex items-center gap-2">
           <span>■</span>
           <span className="font-bold uppercase tracking-wider">
-            INSPECT PROVENANCE & API TELEMETRY ({provenance?.length || 0} CALLS LOGGED)
+            Inspect Provenance & Qloo API Telemetry ({provenance?.length || 0} calls logged)
           </span>
         </div>
         <span className="text-[#57534e]">{open ? '[ - CLOSE TRACE ]' : '[ + EXPAND TRACE ]'}</span>

@@ -7,7 +7,7 @@ export function SplitLedgerTable({ ledger, isSolo }: { ledger: any; isSolo: bool
   if (!ledger?.memberLedgers?.length) return null;
 
   const rows = [
-    { id: 'LI-01', name: 'Base Venue Spend', key: 'LI01_BaseVenueSpendCents' },
+    { id: 'LI-01', name: 'LI-01: Venue Base Spend', key: 'LI01_BaseVenueSpendCents' },
     { id: 'LI-02', name: 'Secondary Stop Spend', key: 'LI02_SecondaryStopSpendCents' },
     { id: 'LI-03', name: 'Live Event Ticket', key: 'LI03_LiveEventTicketCents' },
     { id: 'LI-04', name: 'Chicago Sales Tax (10.25%)', key: 'LI04_TaxCents' },
@@ -15,11 +15,11 @@ export function SplitLedgerTable({ ledger, isSolo }: { ledger: any; isSolo: bool
     { id: 'LI-06', name: 'Shared Items Remainder Cent Split', key: 'LI06_SharedGroupItemsCents' },
     { id: 'LI-07', name: 'Round-Trip Commute Fare', key: 'LI07_MemberCommuteCostCents' },
     { id: 'LI-08', name: 'Contingency Buffer (10%)', key: 'LI08_ContingencyCents' },
-    { id: 'LI-09', name: 'Total Per-Person All-In Spend', key: 'LI09_TotalPerPersonAllInCents', isTotal: true },
+    { id: 'LI-09', name: 'LI-09: Total Member Cost', key: 'LI09_TotalPerPersonAllInCents', isTotal: true },
     { id: 'LI-10', name: 'Member Budget Cap', key: 'LI10_MemberCapCents', isCap: true },
     { id: 'LI-11', name: 'Remaining Slack under Binding Floor', key: 'LI11_SlackCents' },
-    { id: 'LI-12', name: 'Weekly Running Total (Solo Mode)', key: 'LI12_WeeklyRunningTotalCents', isTotal: isSolo },
-    { id: 'LI-13', name: 'Weekly Savings vs BLS $58.17 Benchmark', key: 'LI13_WeeklySavingsVsBlsBenchmarkCents', isTotal: isSolo }
+    { id: 'LI-12', name: 'LI-12: Weekly Running Total', key: 'LI12_WeeklyRunningTotalCents', isTotal: isSolo },
+    { id: 'LI-13', name: 'LI-13: BLS Weekly Savings', key: 'LI13_WeeklySavingsVsBlsBenchmarkCents', isTotal: isSolo }
   ];
 
   const visibleRows = isSolo ? rows : rows.slice(0, 11);
@@ -30,7 +30,7 @@ export function SplitLedgerTable({ ledger, isSolo }: { ledger: any; isSolo: bool
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
-              05 13-ROW PRE-SPEND SPLIT LEDGER
+              05 13-Row Itemized Pre-Spend Split Ledger
             </span>
             <span className="text-[10px] font-mono text-[#857f72]">Zero Floating-Point Math</span>
           </div>

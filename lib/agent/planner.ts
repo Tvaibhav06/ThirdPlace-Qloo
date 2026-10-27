@@ -26,21 +26,27 @@ const PlannerOutputSchema = z.object({
 export async function planNextActions(
   breaches: any[],
   currentPool: string[],
-  llmClient: any = null
+  llmClient: any = null,
+  currentMembers: any[] = []
 ): Promise<ReplanAction[]> {
   const actions: ReplanAction[] = [];
 
-  // 1. Commute breach: swap slow mode (e.g. walk > 30m -> bike)
+  // 1. Commute breach: swap slow mode (walk -> bike, bike -> cta_rail)
   const commuteBreaches = breaches.filter(b => b.type === 'COMMUTE_FAIRNESS_BREACH');
   for (const cb of commuteBreaches) {
     if (cb.violatingMemberId) {
+      const member = currentMembers.find(
+        m => m.alias === cb.violatingMemberId || m.memberId === cb.violatingMemberId
+      );
+      const currentMode = member?.mode;
+      const nextMode = currentMode === 'bike' ? 'cta_rail' : currentMode === 'walk' ? 'bike' : 'cta_rail';
       actions.push({
         type: 'SWAP_COMMUTE_MODE',
         parameters: {
           alias: cb.violatingMemberId,
-          newMode: 'bike'
+          newMode: nextMode
         },
-        rationale: `Swap ${cb.violatingMemberId} to bike to clear travel time limit with $0 transit fare`
+        rationale: `Swap ${cb.violatingMemberId} from ${currentMode || 'slow mode'} to ${nextMode} to clear travel time limit`
       });
     }
   }

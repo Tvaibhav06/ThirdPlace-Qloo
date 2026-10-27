@@ -13,7 +13,7 @@ export function SharedCulturalDnaCard({ culturalDna }: { culturalDna: any }) {
       <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#d4cdbe]">
         <div className="flex items-center gap-2">
           <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
-            05 SHARED CULTURAL DNA & CROSS-DOMAIN AFFINITIES
+            05 SHARED CULTURAL DNA • Why Your Squad Clicks
           </span>
           <span className="text-[10px] font-mono text-[#857f72]">/v2/insights/compare</span>
         </div>

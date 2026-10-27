@@ -24,7 +24,7 @@ export function FairnessScorecard({
         <div>
           <div className="flex items-center gap-2">
             <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
-              04 TASTE & COMMUTE FAIRNESS SCORECARD
+              04 Per-Friend Taste & Commute Fairness Scorecard
             </span>
             <span className="text-[10px] font-mono text-[#857f72]">Pareto Floor: 0.55 Min</span>
           </div>

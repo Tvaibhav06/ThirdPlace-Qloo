@@ -187,7 +187,7 @@ export async function POST(req: NextRequest) {
           currentPool = currentPool.filter(id => !closedIds.includes(id));
         }
 
-        const actions = await planNextActions(topAttempt.verdict.breaches, currentPool, null);
+        const actions = await planNextActions(topAttempt.verdict.breaches, currentPool, null, currentMembers);
         for (const action of actions) {
           const applied = applyReplanAction(action, currentPool, catalog, currentMembers);
           currentPool = applied.updatedPool;

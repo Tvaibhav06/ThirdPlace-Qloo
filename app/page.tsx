@@ -17,6 +17,7 @@ import { SplitLedgerTable } from './components/SplitLedgerTable';
 import { WeeklyBurnWaterfall } from './components/WeeklyBurnWaterfall';
 import { ProvenanceDrawer } from './components/ProvenanceDrawer';
 import { CompareModal } from './components/CompareModal';
+import { DEFAULT_PRESETS } from '@/lib/presets';
 
 // Dynamically import LeafletMap to avoid SSR window issues
 const LeafletMap = dynamic(() => import('./components/LeafletMap'), {
@@ -30,7 +31,7 @@ const LeafletMap = dynamic(() => import('./components/LeafletMap'), {
 
 export default function WorkspacePage() {
   const [mode, setMode] = useState<'squad' | 'solo'>('squad');
-  const [presets, setPresets] = useState<any[]>([]);
+  const [presets, setPresets] = useState<any[]>(DEFAULT_PRESETS);
 
   // Execution state
   const [running, setRunning] = useState(false);
@@ -211,7 +212,7 @@ export default function WorkspacePage() {
         <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4 mb-4">
           <div>
             <h1 className="text-3xl sm:text-4xl font-serif font-black tracking-wider text-[#18181b] uppercase">
-              THIRDPLACE SQUAD
+              ThirdPlace Squad
             </h1>
             <div className="text-[11px] font-mono tracking-widest uppercase text-[#57534e] mt-0.5">
               CULTURAL CONSENSUS • QLOO TASTE ENGINE
@@ -238,39 +239,37 @@ export default function WorkspacePage() {
           </div>
         </div>
 
-        {/* Hero Thesis Statement & Giant KPI Metric Counters */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-4 border-t border-[#d4cdbe] items-start">
-          <div className="lg:col-span-7">
-            <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#18181b] leading-tight mb-2">
-              Stop guessing group hangouts. Start computing cultural consensus.
-            </h2>
-            <p className="text-xs text-[#57534e] leading-relaxed font-serif max-w-xl">
-              A budget breach of $1.50 in a group of three turns a hangout into awkward debt. Three friends coordinate through Qloo taste graphs to compute the intersection of culture, commute, and integer-cent fairness.
-            </p>
-          </div>
+        {/* Hero Thesis Statement */}
+        <div className="pt-4 border-t border-[#d4cdbe] mb-5">
+          <h2 className="text-xl sm:text-2xl font-serif font-bold text-[#18181b] leading-tight mb-2">
+            Stop guessing group hangouts. Start computing cultural consensus.
+          </h2>
+          <p className="text-xs text-[#57534e] leading-relaxed font-serif max-w-2xl">
+            A budget breach of $1.50 in a group of three turns a hangout into awkward debt. Three friends coordinate through Qloo taste graphs to compute the intersection of culture, commute, and integer-cent fairness.
+          </p>
+        </div>
 
-          {/* Big KPI Metric Row */}
-          <div className="lg:col-span-5 grid grid-cols-5 gap-2 text-center pt-1 border border-[#1c1917] bg-[#efeae1] p-3">
-            <div>
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">74.1</div>
-              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">CONSENSUS</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#15803d]">$18.05</div>
-              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">SAVINGS/WK</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">100%</div>
-              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">QLOO GRAPH</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">13</div>
-              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">LEDGER ROWS</div>
-            </div>
-            <div>
-              <div className="text-2xl sm:text-3xl font-serif font-bold text-[#b91c1c]">0</div>
-              <div className="text-[8px] font-mono uppercase tracking-wider text-[#57534e] mt-0.5">FLOAT LEAKS</div>
-            </div>
+        {/* Big KPI Metric Row: Full Width with Room for Values */}
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-center border border-[#1c1917] bg-[#efeae1] py-3 px-2">
+          <div className="border-r border-[#d4cdbe] last:border-r-0">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">74.1</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest text-[#57534e] mt-0.5">CONSENSUS SCORE</div>
+          </div>
+          <div className="border-r border-[#d4cdbe] last:border-r-0">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#15803d]">$18.05</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest text-[#57534e] mt-0.5">SAVINGS / WK</div>
+          </div>
+          <div className="border-r border-[#d4cdbe] last:border-r-0">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">100%</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest text-[#57534e] mt-0.5">QLOO COVERAGE</div>
+          </div>
+          <div className="border-r border-[#d4cdbe] last:border-r-0">
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#18181b]">13</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest text-[#57534e] mt-0.5">LEDGER ROWS</div>
+          </div>
+          <div>
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-[#b91c1c]">0</div>
+            <div className="text-[9px] font-mono uppercase tracking-widest text-[#57534e] mt-0.5">FLOAT LEAKS</div>
           </div>
         </div>
       </header>

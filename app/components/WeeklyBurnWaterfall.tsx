@@ -15,9 +15,9 @@ export function WeeklyBurnWaterfall({ routine }: { routine: any }) {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-[#d4cdbe]">
         <div>
           <div className="flex items-center gap-2">
-            <span className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
-              03 SOLO WEEKLY ROUTINE & SPEND WATERFALL
-            </span>
+            <h2 className="text-xs font-mono font-bold text-[#18181b] uppercase tracking-wider">
+              03 SOLO WEEKLY ROUTINE & SPEND WATERFALL • Weekly Routine (3 Slots)
+            </h2>
             <span className="text-[10px] font-mono text-[#857f72]">3 Slots: Tue / Thu / Sat</span>
           </div>
           <p className="text-xs text-[#57534e] mt-0.5 font-serif">
@@ -26,11 +26,11 @@ export function WeeklyBurnWaterfall({ routine }: { routine: any }) {
         </div>
         <div className="flex items-center gap-3 font-mono text-xs">
           <div className="bg-[#f6f4ee] px-3 py-1 border border-[#1c1917]">
-            <span className="text-[#57534e]">Spend:</span>{' '}
+            <span className="text-[#57534e]">Weekly Total Spend:</span>{' '}
             <strong className="text-[#18181b]">${totalWeeklyDollars.toFixed(2)}</strong>
           </div>
           <div className="bg-[#dcfce7] px-3 py-1 border border-[#16a34a]">
-            <span className="text-[#15803d]">BLS Savings:</span>{' '}
+            <span className="text-[#15803d]">Savings vs BLS ($58.17/wk):</span>{' '}
             <strong className="text-[#15803d]">${savingsDollars.toFixed(2)}/wk</strong>
           </div>
         </div>
