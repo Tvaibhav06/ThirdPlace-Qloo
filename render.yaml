@@ -19,7 +19,8 @@ services:
     region: oregon          # free-tier region
     plan: free              # auto-sleeps after 15 min of inactivity
     autoDeploy: true
-    buildCommand: npm ci && npm run build
+    buildCommand: npm ci && npm run build:matrix && npm run typecheck && npm run build
+
     startCommand: npm start
     healthCheckPath: /api/health
 
@@ -45,7 +46,9 @@ services:
         value: gpt-4o-mini
       - key: OSRM_USER_AGENT
         value: ThirdPlaceSquad-2026Hackathon-Build/1.0
-      - key: NODE_ENV
-        value: production
+      # NOTE: do NOT set NODE_ENV here. Setting it to "production" makes
+      # `npm ci` skip devDependencies (typescript, tailwindcss, postcss,
+      # autoprefixer, tsx, ...), which the build needs. Next.js defaults to
+      # production for `next start` on its own.
       - key: PORT
         value: "3000"
