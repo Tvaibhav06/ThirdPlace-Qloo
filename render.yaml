@@ -19,7 +19,12 @@ services:
     region: oregon          # free-tier region
     plan: free              # auto-sleeps after 15 min of inactivity
     autoDeploy: true
-    buildCommand: npm ci && npm run build:matrix && npm run typecheck && npm run build
+    # NODE_ENV is set per-stage below. It MUST be "development" during `npm ci`
+    # (otherwise devDependencies are skipped and the build has no typescript,
+    # @types/*, tailwindcss, etc.) and "production" during `next build`
+    # (development mode triggers a broken prerender of /404). `next start`
+    # then serves the production build.
+    buildCommand: NODE_ENV=development npm ci && NODE_ENV=development npm run build:matrix && NODE_ENV=production npm run typecheck && NODE_ENV=production npm run build
 
     startCommand: npm start
     healthCheckPath: /api/health
@@ -46,9 +51,9 @@ services:
         value: gpt-4o-mini
       - key: OSRM_USER_AGENT
         value: ThirdPlaceSquad-2026Hackathon-Build/1.0
-      # NOTE: do NOT set NODE_ENV here. Setting it to "production" makes
-      # `npm ci` skip devDependencies (typescript, tailwindcss, postcss,
-      # autoprefixer, tsx, ...), which the build needs. Next.js defaults to
-      # production for `next start` on its own.
+      # Do NOT set NODE_ENV as an env var here. Render's environment defaults
+      # it to "production", which makes `npm ci` skip ALL devDependencies
+      # (typescript, @types/*, tailwindcss, postcss, autoprefixer, tsx, ...).
+      # The buildCommand below pins NODE_ENV per-stage instead.
       - key: PORT
         value: "3000"
