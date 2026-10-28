@@ -20,7 +20,6 @@ services:
     plan: free              # auto-sleeps after 15 min of inactivity
     autoDeploy: true
     buildCommand: npm ci && npm run build
-    installCommand: npm ci
     startCommand: npm start
     healthCheckPath: /api/health
 
