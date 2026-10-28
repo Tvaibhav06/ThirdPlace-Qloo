@@ -1,0 +1,52 @@
+# ==============================================================================
+# Render Blueprint — ThirdPlace Squad
+# ==============================================================================
+# Deploy command (one of):
+#   1. Connect: Render Dashboard → Blueprints → paste the repo URL
+#      (https://github.com/Tvaibhav06/ThirdPlace-Qloo), then "Apply".
+#   2. CLI:   render blueprint apply render.yaml
+#   3. Manual: Dashboard → New → Blueprint, point at this repo.
+#
+# Secrets: any env var whose key contains KEY/SECRET/TOKEN/PASSWORD is stored
+# as a Secret Env Var by Render. Before deploying, create the three secrets
+# below in Dashboard → Settings → Secrets (or pre-seed them and re-deploy).
+# ==============================================================================
+
+services:
+  - type: web
+    name: thirdplace-squad
+    env: node
+    region: oregon          # free-tier region
+    plan: free              # auto-sleeps after 15 min of inactivity
+    autoDeploy: true
+    buildCommand: npm ci && npm run build
+    installCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+
+    envVars:
+      # --- Required (create as secrets first) ---
+      - key: QLOO_API_KEY
+        value: secret:QLOO_API_KEY
+
+      # --- Optional runtime config ---
+      - key: QLOO_BASE_URL
+        value: https://hackathon.api.qloo.com
+      - key: APP_DAILY_QLOO_BUDGET
+        value: "500"
+      - key: CACHE_TTL_SECONDS
+        value: "86400"
+      - key: TICKETMASTER_API_KEY
+        value: secret:TICKETMASTER_API_KEY
+      - key: LLM_PROVIDER
+        value: openai
+      - key: LLM_API_KEY
+        value: secret:LLM_API_KEY
+      - key: LLM_MODEL
+        value: gpt-4o-mini
+      - key: OSRM_USER_AGENT
+        value: ThirdPlaceSquad-2026Hackathon-Build/1.0
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "3000"
