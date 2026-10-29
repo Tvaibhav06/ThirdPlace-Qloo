@@ -4,32 +4,42 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Uptime Status](https://img.shields.io/badge/Status-Live%20Production-emerald.svg)](https://thirdplace-squad.onrender.com)
-[![Qloo API: Verified](https://img.shields.io/badge/Qloo%20API-Verified%20(2026)-indigo.svg)](https://qloo.com)
 
 ---
 
-## 1. Executive Summary & Problem Solved
+## 🎯 Hackathon Submission
 
-Young adults (ages 18 to 30) moving to new cities or organizing hangouts hit two compounding failures:
-1. **Alone**: They lack affordable recurring social environments ("third places") where people with matching cultural tastes gather (STAT/AP 2023 loneliness advisory; BLS 2024 under-25 annual food-away-from-home average of $3,025 = $58.17/week).
-2. **In a Group**: Group chats paralyze when tastes diverge, budgets differ, and one friend always travels farthest.
+**Live Demo**: [https://thirdplace-squad.onrender.com](https://thirdplace-squad.onrender.com)  |  **Repo**: [https://github.com/Tvaibhav06/ThirdPlace-Qloo](https://github.com/Tvaibhav06/ThirdPlace-Qloo)
 
-Existing tools fail them: Yelp/Google Maps filter by category and rating rather than books, games, and music; Splitwise acts only after money is spent; and midpoint tools balance geography alone.
+> *ThirdPlace Squad is a social consensus engine that turns the chaos of "Where should we hang out?" into a mathematically elegant, budget-respectful plan that everyone can agree on — without anyone having to admit they're broke.*
 
-**ThirdPlace Squad** bridges cross-media taste profiles (books, games, music, movies, TV shows) into verified physical third-place venues using Qloo, verified by deterministic integer-cent split ledgers and Pareto fairness constraints.
+## 🚀 Hackathon Submission Details
+
+This repository is submitted for the **2026 Qloo Agentic Hackathon**.
+
+1. **Live Demo**: [https://thirdplace-squad.onrender.com](https://thirdplace-squad.onrender.com)
+2. **Source Code**: [https://github.com/Tvaibhav06/ThirdPlace-Qloo](https://github.com/Tvaibhav06/ThirdPlace-Qloo)
+3. **License**: [MIT License](LICENSE)
+
+> *Everything you need to run this demo is in `render.yaml`. One-click deploy on Render (free tier).*
 
 ---
 
-## 2. Our 4 Winning Wedges
 
-1. **Dual-Mode Architecture (Solo Weekly Routine + Squad Consensus)**:
-   A single unified backend (`/api/solo/plan` and `/api/squad/plan`) providing both a 3-slot weekly routine optimizer for newcomers (benchmarked against the $58.17/wk BLS average via `LI-13`) and a multi-friend consensus engine.
-2. **Pre-Spend 13-Row Integer-Cent All-In Split Ledger (`LI-01` to `LI-13`)**:
-   Eliminates rough `$-$$$$` guesswork with exact Chicago 10.25% sales tax (1025 bp), venue-type gratuity (1800 bp sit-down, 1000 bp counter, 0 bp retail/free), 2026 CTA transit fares (275c rail, 250c bus), and deterministic shared-item remainder cent splitting. Zero floating-point math touches money.
-3. **P0 Blind Cap Mode (`blindCapMode: true` by default)**:
-   Enforces $\max_m \text{LI-09}(m) \le \min_m \text{LI-10}(m)$ while masking individual member caps in the UI, ledger, and exported invite as `hidden (binding floor applied)`. No friend has to publicly state they are broke to prevent overspending.
-4. **Weighted 2-Stop Micro-Combo Replanning (Fix F-02) + `/v2/insights/compare` Shared Cultural DNA**:
-   Pairs a $0 cultural anchor (bookstore, record shop, park, gallery) with a low-cost cafe ($R(m, \text{combo}) = 0.65 \max + 0.35 \min$), with `GET /v2/insights/compare` (`compare_audiences`) extracting shared taste tags versus each member's distinctive cultural tags.
+## 🧠 What Makes Us Different
+
+Young adults moving to new cities often hit two walls:
+1. **Alone**: Finding a recurring "third place" (a cafe, bookstore, or park) that feels like it "gets" you, without breaking the bank.
+2. **In a Group**: The group chat paralysis where budgets differ, tastes diverge, and no one wants to travel an hour.
+
+ThirdPlace Squad bridges this gap. We combine Qloo’s massive cultural graph (books, music, movies) with a deterministic, integer-cent financial engine that respects the reality of budgets.
+
+### The 4 Winning Wedges
+
+1. **Dual-Mode Intelligence**: Whether you're flying solo for a weekly routine or wrangling a squad of friends, our engine uses the same rigorous constraint logic to find the intersection of culture, geography, and fair spending.
+2. **The 13-Row Split Ledger**: No more rough estimates. We calculate exact Chicago 10.25% tax, transit fares, and gratuity, then split the remainder cent-by-cent deterministically. No floating-point math, no "I'll get it next time" drama.
+3. **P0 Blind Cap Privacy**: Our `blindCapMode` enforces a budget constraint without exposing individual member caps. Everyone gets a fair hangout they can afford, and no one has to publicly declare a limit.
+4. **Weighted Micro-Combo Replanning**: If a group plan hits a budget limit, our agent doesn't just fail — it automatically re-plans by pairing a $0 cultural anchor (like a bookstore or gallery) with a low-cost cafe. It’s the ultimate Pareto-fair solution for "being there is what matters."
 
 ---
 
