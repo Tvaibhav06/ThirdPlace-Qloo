@@ -7,13 +7,13 @@
 
 ---
 
-## 🎯 Hackathon Submission
+##  Hackathon Submission
 
 **Live Demo**: [https://thirdplace-squad.onrender.com](https://thirdplace-squad.onrender.com)  |  **Repo**: [https://github.com/Tvaibhav06/ThirdPlace-Qloo](https://github.com/Tvaibhav06/ThirdPlace-Qloo)
 
 > *ThirdPlace Squad is a social consensus engine that turns the chaos of "Where should we hang out?" into a mathematically elegant, budget-respectful plan that everyone can agree on — without anyone having to admit they're broke.*
 
-## 🚀 Hackathon Submission Details
+##  Hackathon Submission Details
 
 This repository is submitted for the **2026 Qloo Agentic Hackathon**.
 
@@ -26,7 +26,7 @@ This repository is submitted for the **2026 Qloo Agentic Hackathon**.
 ---
 
 
-## 🧠 What Makes Us Different
+##  What Makes Us Different
 
 Young adults moving to new cities often hit two walls:
 1. **Alone**: Finding a recurring "third place" (a cafe, bookstore, or park) that feels like it "gets" you, without breaking the bank.
